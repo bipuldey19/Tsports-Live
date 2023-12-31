@@ -1,8 +1,10 @@
 const axios = require("axios");
 const express = require("express");
 const request = require("request");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 
 app.get("/", async (req, res) => {
   res.sendFile(__dirname + "/index.html");
