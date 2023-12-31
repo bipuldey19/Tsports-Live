@@ -15,7 +15,7 @@ app.get("/tsports2", async (req, res) => {
 const forwardRequest = async (url, res) => {
   const { data } = await axios.get(
     "https://raw.githubusercontent.com/byte-capsule/TSports-m3u8-Grabber/main/TSports_m3u8_headers.Json"
-  );
+  ); // ©️ Author: https://github.com/byte-capsule | Repository: https://github.com/byte-capsule/TSports-m3u8-Grabber
   let TsportsCookie = data.channels[1].headers.Cookie;
   request
     .get({
@@ -23,7 +23,7 @@ const forwardRequest = async (url, res) => {
       headers: {
         Cookie: TsportsCookie,
         Host: "live-cdn.tsports.com",
-        "User-agent": "https://github.com/byte-capsule (Linux;Android 14)",
+        "User-agent": "Linux;Android 14",
       },
     })
     .pipe(res);
