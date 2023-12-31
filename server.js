@@ -4,7 +4,14 @@ const request = require("request");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'https://live-cdn.tsports.com',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
 
 app.get("/", async (req, res) => {
   res.sendFile(__dirname + "/index.html");
