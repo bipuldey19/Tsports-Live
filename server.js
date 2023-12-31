@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const app = express();
 const corsOptions = {
-  origin: 'https://live-cdn.tsports.com',
+  origin: 'https://tsportslive.onrender.com/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
