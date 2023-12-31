@@ -4,6 +4,10 @@ const request = require("request");
 
 const app = express();
 
+app.get("/", async (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
 app.get("/tsports1", async (req, res) => {
   res.sendFile(__dirname + "/tsports1.html");
 });

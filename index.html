@@ -1,0 +1,4385 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-200">
+
+<head>
+    <title>T Sports | Live</title>
+
+    <link href="https://www.tsports.com/css/app.css?id=b459d044984cdcc537cf" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> -->
+    <link rel="stylesheet" href="https://www.tsports.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/animate.min.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/flaticon.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/odometer.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/aos.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/slick.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/default.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/responsive.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/style.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/ticker-style.css">
+
+    <link rel="stylesheet" href="https://www.tsports.com/css/google-fonts.css">
+    <link rel="stylesheet" href="https://www.tsports.com/css/moon-get.css">
+
+    <style>
+        @font-face {
+            font-family: "rmp-font";
+            src: url(data:font/woff2;charset=utf-8;base64,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) format("woff2");
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        /* accessible buttons
+ * reset user agent stylesheet styles */
+        .rmp-button {
+            background: none;
+            border: none;
+            color: inherit;
+            display: block;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            text-shadow: none;
+            text-transform: none;
+            text-decoration: none;
+            transition: none;
+            -webkit-appearance: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -moz-appearance: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            appearance: none;
+            text-align: inherit;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .rmp-button:focus {
+            outline: 0;
+        }
+
+        .rmp-select {
+            margin: 0;
+            font-family: inherit;
+            text-transform: none;
+        }
+
+        .rmp-inline {
+            display: inline;
+        }
+
+        .rmp-grab {
+            cursor: grab;
+            cursor: -webkit-grab;
+            /* stylelint-disable-line value-no-vendor-prefix */
+        }
+
+        .rmp-container ::before {
+            box-sizing: border-box;
+        }
+
+        /* default color settings */
+        /* chromecast button colors as per Google recommendations
+ * this is also used for UI focus on keyboard controls */
+        .rmp-volume-bar,
+        .rmp-color-bg-button {
+            background: #ffffff;
+        }
+
+        .rmp-ad-current-time,
+        .rmp-quality-hd,
+        .rmp-cue-point,
+        .rmp-transcripts-current-item,
+        .rmp-playlist-side-menu::-webkit-scrollbar-thumb,
+        .rmp-transcripts-side-menu::-webkit-scrollbar-thumb,
+        .rmp-dvr .rmp-time-elapsed-text,
+        .rmp-dvr-vod .rmp-time-elapsed-text:hover {
+            background: #82b1ff;
+        }
+
+        .rmp-color-button,
+        .rmp-control-bar-hint,
+        .rmp-time-elapsed-text,
+        .rmp-duration-text,
+        .rmp-hint,
+        .rmp-in-module-hint,
+        .rmp-quality-hd,
+        .rmp-related-skip-preview-up-next,
+        .rmp-transcripts-current-item:hover,
+        .rmp-volume-indicator,
+        .rmp-volume-hint,
+        .rmp-related-skip-preview-title {
+            color: #ffffff;
+        }
+
+        .rmp-color-accent,
+        .rmp-overlay-level:hover:not(.rmp-overlay-level-active),
+        .rmp-i:hover,
+        .rmp-module:hover .rmp-i,
+        .rmp-ad-info-message,
+        .rmp-sup,
+        .rmp-transcripts-item:hover:not(.rmp-transcripts-current-item),
+        .rmp-live .rmp-time-elapsed-text::before,
+        .rmp-pip-on .rmp-i-pip,
+        .rmp-theater-on .rmp-i-theater,
+        .rmp-related-item:hover .rmp-related-title {
+            color: #82b1ff;
+        }
+
+        .rmp-related-item:hover {
+            box-shadow: 0 0 0 1px #82b1ff;
+        }
+
+        .rmp-module-fcc-settings {
+            border-color: #ffffff;
+        }
+
+        .rmp-button.rmp-overlay-level.rmp-abr-active {
+            border-color: #82b1ff;
+        }
+
+        .rmp-module-fcc-settings:hover {
+            border-color: #82b1ff;
+            color: #82b1ff;
+        }
+
+        .rmp-dvr-vod .rmp-time-elapsed-text {
+            background: rgba(130, 177, 255, 0.7);
+        }
+
+        .rmp-loading-spin-circle {
+            border-color: #ffffff #ffffff transparent;
+        }
+
+        .rmp-overlay-wrapper::-webkit-scrollbar,
+        .rmp-playlist-side-menu::-webkit-scrollbar,
+        .rmp-transcripts-side-menu::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .rmp-overlay-wrapper::-webkit-scrollbar-track,
+        .rmp-playlist-side-menu::-webkit-scrollbar-track,
+        .rmp-transcripts-side-menu::-webkit-scrollbar-track {
+            background: #ffffff;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .rmp-overlay-wrapper::-webkit-scrollbar-thumb {
+            background: #000000;
+        }
+
+        /* core CSS */
+        /* player chrome bar (a.k.a. player controls) and inner elements */
+        .rmp-control-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            text-align: center;
+            overflow: visible;
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            text-shadow: none;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-control-bar-hint {
+            font-size: 14px;
+            opacity: 0;
+            position: absolute;
+            top: -28px;
+            left: 0;
+            padding: 0 8px;
+            height: 24px;
+            line-height: 24px;
+            white-space: nowrap;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            transition-property: opacity;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        .rmp-mobile .rmp-control-bar-hint,
+        .rmp-no-hint .rmp-control-bar-hint,
+        .rmp-no-hint .rmp-volume-hint,
+        .rmp-doubleextrasmall .rmp-control-bar-hint {
+            display: none !important;
+        }
+
+        .rmp-play-pause:hover .rmp-control-bar-hint,
+        .rmp-fullscreen:hover .rmp-control-bar-hint,
+        .rmp-quality:hover .rmp-control-bar-hint,
+        .rmp-captions:hover .rmp-control-bar-hint,
+        .rmp-audio:hover .rmp-control-bar-hint,
+        .rmp-quick-rewind-or-forward:hover .rmp-control-bar-hint {
+            opacity: 1;
+        }
+
+        /* before durationchange event we hide control bar */
+        .rmp-wait-for-duration .rmp-control-bar {
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        /* play/pause button */
+        .rmp-play-pause {
+            position: absolute;
+            left: 8px;
+            width: 48px;
+            height: 48px;
+        }
+
+        /* .rmp-quick-rewind-or-forward */
+        .rmp-quick-rewind-or-forward {
+            position: absolute;
+            left: 56px;
+            width: 48px;
+            height: 48px;
+        }
+
+        /* .rmp-quick-rewind-and-forward */
+        .rmp-quick-rewind-and-forward {
+            position: absolute;
+            left: 104px;
+            width: 48px;
+            height: 48px;
+        }
+
+        /* desktop volume UI */
+        .rmp-volume {
+            position: absolute;
+            left: 56px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .rmp-volume-container {
+            position: absolute;
+            width: 48px;
+            left: 56px;
+            bottom: 48px;
+            height: 124px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .rmp-volume-container:focus {
+            outline: none;
+        }
+
+        .rmp-volume-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-top: -14px;
+            margin-left: -14px;
+            width: 28px;
+            height: 28px;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .rmp-volume-bar-container {
+            position: absolute;
+            left: 13px;
+            bottom: 15px;
+            top: auto;
+            width: 22px;
+            height: 92px;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .rmp-volume-bar {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .rmp-volume-indicator {
+            position: absolute;
+            left: 0;
+            top: -48px;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            font-size: 14px;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        .rmp-volume-hint {
+            position: absolute;
+            top: -76px;
+            padding: 0 8px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            white-space: nowrap;
+            width: auto;
+            left: 50%;
+            transform: translate(-50%, 0);
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        .rmp-small .rmp-volume-hint,
+        .rmp-extrasmall .rmp-volume-hint,
+        .rmp-extrasmall .rmp-volume-indicator {
+            display: none;
+        }
+
+        /* current time in video */
+        .rmp-time {
+            position: absolute;
+            left: 104px;
+            width: 96px;
+            height: 48px;
+            line-height: 48px;
+            white-space: nowrap;
+        }
+
+        .rmp-time-separator {
+            padding: 0 4px;
+        }
+
+        .rmp-time-elapsed-text,
+        .rmp-duration-text {
+            position: relative;
+            top: 0;
+            left: 0;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            transition-property: background-color, color;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* player seek bar / timeline */
+        .rmp-seek-bar {
+            position: absolute;
+            left: 216px;
+            width: calc(100% - 216px - 120px);
+            height: 48px;
+        }
+
+        /* element with slider role will have focus on click
+ so we remove the user agent stylesheet for :focus */
+        .rmp-seek-bar:focus {
+            outline: none;
+        }
+
+        .rmp-time-total {
+            position: relative;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .rmp-current {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+        }
+
+        .rmp-handle {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -14px;
+            margin-left: -14px;
+            width: 28px;
+            height: 28px;
+            z-index: 1;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .rmp-loaded {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+        }
+
+        /* quality menu */
+        .rmp-quality {
+            position: absolute;
+            top: 0;
+            right: 56px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .rmp-quality-hd {
+            font-size: 8px;
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            height: 12px;
+            line-height: 8px;
+            padding: 2px;
+            width: auto;
+            display: none;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            background-clip: padding-box;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+        }
+
+        /* multiple audio|captions menu */
+        .rmp-captions-ui .rmp-captions,
+        .rmp-audio-ui .rmp-audio {
+            position: absolute;
+            top: 0;
+            right: 104px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .rmp-captions-ui.rmp-audio-ui .rmp-audio {
+            right: 156px;
+        }
+
+        .rmp-captions-ui .rmp-seek-bar,
+        .rmp-audio-ui .rmp-seek-bar {
+            left: 216px;
+            width: calc(100% - 216px - 168px);
+        }
+
+        .rmp-captions-ui.rmp-audio-ui .rmp-seek-bar {
+            left: 216px;
+            width: calc(100% - 216px - 216px);
+        }
+
+        /* fullscreen management */
+        .rmp-fullscreen {
+            position: absolute;
+            top: 0;
+            right: 8px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .rmp-fullscreen .rmp-control-bar-hint {
+            right: 0;
+            left: auto;
+        }
+
+        /* time indicator (hover seek bar) */
+        .rmp-indicator {
+            position: absolute;
+            top: -40px;
+            display: none;
+            width: 70px;
+            margin-left: -35px;
+            text-align: center;
+            height: 24px;
+            line-height: 24px;
+            z-index: 999;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        .rmp-extrasmall .rmp-indicator,
+        .rmp-doubleextrasmall .rmp-indicator {
+            display: none !important;
+        }
+
+        /* Seek bar thumbnails */
+        .rmp-thumbnails {
+            width: 128px;
+            position: absolute;
+            left: 0;
+        }
+
+        .rmp-seek-bar-thumbnails .rmp-indicator {
+            position: absolute;
+            width: 128px;
+            margin-left: -64px;
+        }
+
+        /* cue points */
+        .rmp-cue-point {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 6px;
+        }
+
+        .rmp-cue-point-text {
+            position: absolute;
+            top: -40px;
+            opacity: 0;
+            visibility: hidden;
+            width: auto;
+            margin-left: auto;
+            text-align: center;
+            height: 24px;
+            line-height: 24px;
+            z-index: 1000;
+            padding: 0 8px;
+            white-space: nowrap;
+            transform: translateX(-50%);
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        /*
+  .rmp-small: 375px < player size < 480px
+  .rmp-extrasmall: 280px < player size < 375px
+  .rmp-doubleextrasmall: player size < 280px
+*/
+        .rmp-small .rmp-time,
+        .rmp-extrasmall .rmp-time,
+        .rmp-doubleextrasmall .rmp-time {
+            right: 8px;
+            left: auto;
+            bottom: 56px;
+            height: auto;
+            line-height: normal;
+            padding: 4px;
+            width: 114px;
+        }
+
+        .rmp-small .rmp-seek-bar,
+        .rmp-extrasmall .rmp-seek-bar,
+        .rmp-extrasmall.rmp-audio-ui .rmp-seek-bar,
+        .rmp-extrasmall.rmp-captions-ui .rmp-seek-bar,
+        .rmp-extrasmall.rmp-captions-ui.rmp-audio-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 120px);
+        }
+
+        .rmp-small.rmp-captions-ui .rmp-seek-bar,
+        .rmp-small.rmp-audio-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 168px);
+        }
+
+        .rmp-small.rmp-captions-ui.rmp-audio-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 216px);
+        }
+
+        .rmp-extrasmall .rmp-audio,
+        .rmp-extrasmall .rmp-captions,
+        .rmp-extrasmall .rmp-quick-rewind-or-forward,
+        .rmp-extrasmall .rmp-quick-rewind-and-forward {
+            display: none !important;
+        }
+
+        .rmp-doubleextrasmall .rmp-audio,
+        .rmp-doubleextrasmall .rmp-quality,
+        .rmp-doubleextrasmall .rmp-captions,
+        .rmp-doubleextrasmall .rmp-fullscreen,
+        .rmp-doubleextrasmall .rmp-time,
+        .rmp-doubleextrasmall .rmp-volume-container,
+        .rmp-doubleextrasmall .rmp-quick-rewind-or-forward,
+        .rmp-doubleextrasmall .rmp-quick-rewind-and-forward,
+        .rmp-doubleextrasmall .rmp-module,
+        .rmp-doubleextrasmall .rmp-loading-spin,
+        .rmp-doubleextrasmall .rmp-title-area {
+            display: none !important;
+        }
+
+        .rmp-doubleextrasmall .rmp-seek-bar,
+        .rmp-doubleextrasmall.rmp-audio-ui .rmp-seek-bar,
+        .rmp-doubleextrasmall.rmp-captions-ui .rmp-seek-bar,
+        .rmp-doubleextrasmall.rmp-audio-ui.rmp-captions-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 112px - 32px);
+        }
+
+        /* .rmp-quick-rewind-or-forward-ui */
+        .rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-quick-rewind-or-forward-ui .rmp-volume-container {
+            left: 104px;
+        }
+
+        .rmp-quick-rewind-or-forward-ui .rmp-time {
+            left: 152px;
+        }
+
+        .rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 264px;
+            width: calc(100% - 120px - 264px);
+        }
+
+        .rmp-small.rmp-quick-rewind-or-forward-ui .rmp-time {
+            right: 8px;
+            left: auto;
+        }
+
+        .rmp-small.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 120px - 168px);
+        }
+
+        .rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume-container,
+        .rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume-container {
+            left: 56px;
+        }
+
+        .rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-time {
+            right: 8px;
+            left: auto;
+        }
+
+        .rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 120px);
+        }
+
+        .rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 16px - 120px);
+        }
+
+        .rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 264px;
+            width: calc(100% - 120px - 312px);
+        }
+
+        .rmp-small.rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-small.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 168px);
+        }
+
+        .rmp-extrasmall.rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-extrasmall.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 120px);
+        }
+
+        .rmp-doubleextrasmall.rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-doubleextrasmall.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 16px);
+        }
+
+        .rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 264px;
+            width: calc(100% - 264px - 216px);
+        }
+
+        .rmp-small.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 216px);
+        }
+
+        .rmp-extrasmall.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 120px);
+        }
+
+        .rmp-doubleextrasmall.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 16px);
+        }
+
+        /* .rmp-quick-rewind-and-forward-ui */
+        .rmp-quick-rewind-and-forward-ui .rmp-volume,
+        .rmp-quick-rewind-and-forward-ui .rmp-volume-container {
+            left: 152px;
+        }
+
+        .rmp-quick-rewind-and-forward-ui .rmp-time {
+            left: 200px;
+        }
+
+        .rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 312px;
+            width: calc(100% - 120px - 312px);
+        }
+
+        .rmp-small.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 216px;
+            width: calc(100% - 120px - 216px);
+        }
+
+        .rmp-captions-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar,
+        .rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 312px;
+            width: calc(100% - 312px - 168px);
+        }
+
+        .rmp-small.rmp-captions-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar,
+        .rmp-small.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 216px;
+            width: calc(100% - 216px - 168px);
+        }
+
+        .rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 312px;
+            width: calc(100% - 312px - 168px);
+        }
+
+        .rmp-small.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 216px;
+            width: calc(100% - 216px - 168px);
+        }
+
+        .rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-audio,
+        .rmp-small.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-audio {
+            display: none;
+        }
+
+        .rmp-extrasmall.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 120px);
+        }
+
+        .rmp-doubleextrasmall.rmp-captions-ui.rmp-audio-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 120px;
+            width: calc(100% - 120px - 16px);
+        }
+
+        /* error UI */
+        .rmp-error-ui .rmp-module,
+        .rmp-error-ui .rmp-poster,
+        .rmp-error-ui .rmp-mobile-central-ui,
+        .rmp-error-ui .rmp-time,
+        .rmp-error-ui .rmp-overlay-button,
+        .rmp-error-ui .rmp-loading-spin,
+        .rmp-error-ui .rmp-title-area,
+        .rmp-error-ui.rmp-audio-only .rmp-control-bar,
+        .rmp-error-ui.rmp-audio-only .rmp-error-text-wrapper p {
+            display: none !important;
+        }
+
+        /* 
+ * No playback support or
+ * error detected 
+ */
+        .rmp-error {
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-align: left;
+            background-color: #000000;
+            background-image: radial-gradient(#06224d, #01060d);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Courier New", "Courier", monospace;
+            color: rgba(33, 150, 243, 0.8);
+            text-shadow: 0 0 1ex #42a5f5, 0 0 2px rgba(255, 255, 255, 0.8);
+        }
+
+        .rmp-error-overlay {
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+            background-size: auto 4px;
+            z-index: 1;
+        }
+
+        .rmp-error-overlay::before {
+            content: "";
+            pointer-events: none;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, transparent 0%, rgba(13, 71, 161, 0.2) 2%, rgba(13, 71, 161, 0.8) 3%, rgba(13, 71, 161, 0.2) 3%, transparent 100%);
+            background-repeat: no-repeat;
+            animation: scan 6s linear 0s infinite;
+        }
+
+        @keyframes scan {
+            0% {
+                background-position: 0 -100vh;
+            }
+
+            35%,
+            100% {
+                background-position: 0 100vh;
+            }
+        }
+
+        .rmp-error-terminal {
+            box-sizing: inherit;
+            position: absolute;
+            height: 100%;
+            width: 1000px;
+            max-width: 100%;
+            padding: 2rem;
+            text-transform: uppercase;
+        }
+
+        .rmp-error-output {
+            color: rgba(33, 150, 243, 0.8);
+            text-shadow: 0 0 1ex #42a5f5, 0 0 2px rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+        }
+
+        .rmp-error-output::before {
+            content: "> ";
+        }
+
+        .rmp-error-code {
+            color: white;
+        }
+
+        .rmp-error-ui.rmp-audio-only .rmp-error-text-wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 48px;
+            line-height: 48px;
+            margin-left: 48px;
+            transform: none;
+        }
+
+        .rmp-small.rmp-error-ui.rmp-audio-only .rmp-error-text-wrapper,
+        .rmp-extrasmall.rmp-error-ui.rmp-audio-only .rmp-error-text-wrapper,
+        .rmp-doubleextrasmall.rmp-error-ui.rmp-audio-only .rmp-error-text-wrapper {
+            top: 10px;
+            height: 24px;
+            line-height: 24px;
+            margin-left: 24px;
+        }
+
+        .rmp-doubleextrasmall .rmp-error p {
+            display: none;
+        }
+
+        .rmp-error-text-wrapper {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rmp-error-text-header {
+            font-size: 36px;
+        }
+
+        /* Content title and description */
+        .rmp-title-area,
+        .rmp-cast-diplay-message-area {
+            position: absolute;
+            opacity: 1;
+            visibility: visible;
+            padding: 0 8px;
+            cursor: default;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+            height: 64px;
+            line-height: 64px;
+            color: #ffffff;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-cast-diplay-message-area {
+            display: none;
+        }
+
+        .rmp-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rmp-description,
+        .rmp-cast-diplay-message-status {
+            position: absolute;
+            top: 40px;
+            height: 40px;
+            line-height: 40px;
+            left: 0;
+            padding: 0 8px;
+            width: 100%;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rmp-title-ui.rmp-title-description-ui .rmp-title-area,
+        .rmp-casting .rmp-cast-diplay-message-area {
+            height: 80px;
+            line-height: 40px;
+        }
+
+        .rmp-360-ui .rmp-title-area {
+            text-align: center;
+        }
+
+        .rmp-tv .rmp-title-area {
+            padding: 0;
+            height: 108px;
+            line-height: 108px;
+        }
+
+        .rmp-tv .rmp-title {
+            top: 34px;
+            left: 96px;
+            font-size: 32px;
+            line-height: 40px;
+            height: 40px;
+            position: absolute;
+        }
+
+        .rmp-tv .rmp-description {
+            left: 96px;
+            top: 80px;
+            font-size: 24px;
+            padding: 0;
+        }
+
+        .rmp-tv.rmp-title-ui.rmp-title-description-ui .rmp-title-area {
+            height: 154px;
+            line-height: 154px;
+        }
+
+        /* player container */
+        .rmp-container {
+            position: relative;
+            text-align: center;
+            outline: none;
+            background-color: #000000;
+            padding: 0;
+            border: none;
+            display: block;
+            font-size: 14px;
+            max-width: none;
+            max-height: none;
+            overflow: hidden;
+            line-height: normal;
+            box-sizing: border-box;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+        }
+
+        .rmp-container * {
+            box-sizing: border-box;
+        }
+
+        .rmp-container img {
+            border: none;
+        }
+
+        /* applies to the video tag and its wrapper */
+        .rmp-video,
+        .rmp-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            display: block;
+            outline: none;
+        }
+
+        /* right to left language (Hebrew) */
+        .rmp-rtl {
+            direction: rtl;
+        }
+
+        /* debug overlay */
+        .rmp-debug-overlay {
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            font-size: 12px;
+            overflow: auto;
+            z-index: 1001;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: left;
+        }
+
+        .rmp-debug-overlay-text {
+            margin-bottom: 5px;
+        }
+
+        /* Accessibility
+ * outline is added on focus with JavaScript through the rmp-focus class for keyboard navigation
+ * this is for the player container and related items where inset shadows are not rendered */
+        .rmp-alt-focus,
+        .rmp-related-ui .rmp-alt-focus {
+            box-shadow: 0 0 0 2px #2196f3;
+        }
+
+        /* this is for inner player UI elements (play, seekbar, fullscreen buttons) */
+        .rmp-focus {
+            box-shadow: inset 0 0 0 2px #2196f3;
+        }
+
+        /* show labels when focus is on */
+        .rmp-focus.rmp-play-pause .rmp-control-bar-hint,
+        .rmp-focus.rmp-fullscreen .rmp-control-bar-hint,
+        .rmp-focus.rmp-quality .rmp-control-bar-hint,
+        .rmp-focus.rmp-captions .rmp-control-bar-hint,
+        .rmp-focus.rmp-audio .rmp-control-bar-hint,
+        .rmp-focus.rmp-quick-rewind-or-forward .rmp-control-bar-hint,
+        .rmp-focus.rmp-module .rmp-hint,
+        .rmp-focus.rmp-module-overlay-icons .rmp-in-module-hint {
+            opacity: 1;
+        }
+
+        /* central play/pause button container for desktop */
+        .rmp-overlay-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 60px;
+            margin-top: -30px;
+            width: 60px;
+            margin-left: -30px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* central play/pause button container for mobile */
+        .rmp-mobile-central-ui {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 60px;
+            margin-top: -30px;
+            width: 60px;
+            margin-left: -30px;
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* central loading spin container */
+        .rmp-loading-spin {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 60px;
+            margin-top: -30px;
+            width: 60px;
+            margin-left: -30px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* when rmp-waiting is on player container then we force visibility of loading spin */
+        .rmp-waiting .rmp-loading-spin {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .rmp-waiting .rmp-overlay-button,
+        .rmp-waiting .rmp-mobile-central-ui {
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        .rmp-overlay-button .rmp-i-play,
+        .rmp-overlay-button .rmp-i-pause,
+        .rmp-overlay-button .rmp-i-replay,
+        .rmp-mobile-central-ui .rmp-i-play,
+        .rmp-mobile-central-ui .rmp-i-pause,
+        .rmp-mobile-central-ui .rmp-i-replay {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rmp-doubleextrasmall .rmp-overlay-button,
+        .rmp-doubleextrasmall .rmp-mobile-central-ui,
+        .rmp-doubleextrasmall .rmp-loading-spin {
+            margin-top: -48px;
+        }
+
+        /* hide controls layout */
+        .rmp-hide-controls>*:not(.rmp-video):not(.rmp-content):not(.rmp-ad-container):not(.rmp-error):not(.rmp-poster),
+        .rmp-no-display,
+        .rmp-no-central-play .rmp-overlay-button,
+        .rmp-no-central-play .rmp-mobile-central-ui,
+        .rmp-no-loading-spin .rmp-loading-spin,
+        .rmp-force-no-show {
+            display: none !important;
+        }
+
+        /* force hidding of central play button on iOS */
+        video.rmp-video::-webkit-media-controls-start-playback-button {
+            display: none !important;
+            -webkit-appearance: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            appearance: none;
+        }
+
+        /* poster container */
+        .rmp-poster {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #000000;
+            display: block;
+        }
+
+        /* poster image */
+        .rmp-poster-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .rmp-poster-img-no-object-fit {
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: auto;
+            transform: translate(-50%, -50%);
+        }
+
+        /* posterScaleMode setting */
+        .rmp-object-fit-contain {
+            object-fit: contain;
+        }
+
+        .rmp-object-fit-cover {
+            object-fit: cover;
+        }
+
+        .rmp-object-fit-fill {
+            object-fit: fill;
+        }
+
+        .rmp-object-fit-none {
+            object-fit: none;
+        }
+
+        /* rmp-chrome is added to player container while it is active (user is interacting w/ the player)
+ * hence player UI is visible */
+        .rmp-chrome .rmp-control-bar,
+        .rmp-chrome .rmp-title-area,
+        .rmp-chrome .rmp-module,
+        .rmp-chrome .rmp-logo,
+        .rmp-chrome .rmp-360-nav,
+        .rmp-chrome .rmp-playlist-left-arrow,
+        .rmp-chrome .rmp-playlist-right-arrow,
+        .rmp-chrome .rmp-mobile-central-ui {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* rmp-no-chrome is added to player container (and rmp-chrome removed) while the player is idle
+ * hence player UI is not visible */
+        .rmp-no-chrome .rmp-control-bar,
+        .rmp-no-chrome .rmp-title-area,
+        .rmp-no-chrome .rmp-module,
+        .rmp-no-chrome .rmp-logo,
+        .rmp-no-chrome .rmp-360-nav,
+        .rmp-no-chrome .rmp-playlist-left-arrow,
+        .rmp-no-chrome .rmp-playlist-right-arrow,
+        .rmp-no-chrome .rmp-mobile-central-ui {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* when player is hidle then we auto-hide the mouse cursor if it is on player */
+        .rmp-no-chrome.rmp-container,
+        .rmp-no-chrome .rmp-content,
+        .rmp-no-chrome .rmp-video,
+        .rmp-no-chrome .rmp-poster,
+        .rmp-no-chrome .rmp-poster-img {
+            cursor: none;
+        }
+
+        /* logo layout */
+        .rmp-logo {
+            position: absolute;
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            margin: 8px;
+            max-width: 44%;
+            cursor: pointer;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-force-show {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .rmp-logo-top-left {
+            left: 0;
+            top: 0;
+        }
+
+        .rmp-logo-bottom-left {
+            left: 0;
+            bottom: 56px;
+        }
+
+        .rmp-logo-top-right {
+            right: 0;
+            top: 56px;
+        }
+
+        .rmp-logo-bottom-right {
+            right: 0;
+            bottom: 56px;
+        }
+
+        .rmp-360-ui .rmp-logo-top-left {
+            top: 164px;
+        }
+
+        .rmp-title-ui .rmp-logo-top-left {
+            top: 64px;
+        }
+
+        .rmp-title-description-ui .rmp-logo-top-left {
+            top: 80px;
+        }
+
+        .rmp-audio-only .rmp-logo,
+        .rmp-doubleextrasmall .rmp-logo {
+            display: none !important;
+        }
+
+        .rmp-fullscreen-on {
+            position: fixed !important;
+            width: 100% !important;
+            height: 100% !important;
+            background: #000000 !important;
+            overflow: hidden !important;
+            z-index: 9999 !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        }
+
+        /* 360 video on iOS or where native fullscreen is not available */
+        .rmp-full-window-on {
+            position: fixed !important;
+            background: #000000 !important;
+            overflow: hidden !important;
+            z-index: 9999 !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        }
+
+        /* fullscreen on iPadOS */
+        .rmp-fullscreen-ipad-os .rmp-360-nav,
+        .rmp-fullscreen-ipad-os .rmp-module-overlay-icons {
+            top: 76px;
+        }
+
+        .rmp-fullscreen-ipad-os .rmp-module,
+        .rmp-fullscreen-ipad-os .rmp-ad-click-ui-mobile {
+            top: 24px;
+        }
+
+        /* fullscreen enhancers for related content */
+        .rmp-fullscreen-on .rmp-related-up-next,
+        .rmp-fullscreen-on .rmp-related-title,
+        .rmp-fullscreen-on .rmp-related-duration {
+            height: 28px;
+            line-height: 28px;
+            font-size: 16px;
+        }
+
+        /* ==========================================================================
+   General module layout - applies to all modules
+   Modules are: RELATED, SHARING, SPEED, CAST, AIRPLAY, CHAPTERS, PiP
+   Modules with overlay are: RELATED, SHARING, SPEED, CHAPTERS
+   ========================================================================== */
+        .rmp-module {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            opacity: 1;
+            visibility: visible;
+            top: 8px;
+            right: 8px;
+            transition-property: opacity, background, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-module~.rmp-module {
+            right: 64px;
+        }
+
+        .rmp-module~.rmp-module~.rmp-module {
+            right: 120px;
+        }
+
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module {
+            right: 176px;
+        }
+
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module {
+            right: 232px;
+        }
+
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module {
+            right: 288px;
+        }
+
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module {
+            right: 344px;
+        }
+
+        .rmp-module-button {
+            width: 48px;
+            height: 48px;
+        }
+
+        .rmp-module~.rmp-module .rmp-module-extended-menu,
+        .rmp-module~.rmp-module~.rmp-module .rmp-module-extended-menu,
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module .rmp-module-extended-menu,
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module .rmp-module-extended-menu,
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module .rmp-module-extended-menu,
+        .rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module~.rmp-module .rmp-module-extended-menu {
+            right: -46px;
+        }
+
+        .rmp-module-open-ui .rmp-title-area,
+        .rmp-module-open-ui .rmp-logo,
+        .rmp-module-open-ui .rmp-control-bar,
+        .rmp-module-open-ui .rmp-loading-spin,
+        .rmp-module-open-ui .rmp-mobile-central-ui,
+        .rmp-module-open-ui .rmp-overlay-button,
+        .rmp-module-open-ui .rmp-module,
+        .rmp-module-open-ui .rmp-360-nav,
+        .rmp-module-open-ui .rmp-360-text,
+        .rmp-module-open-ui .rmp-playlist-left-arrow,
+        .rmp-module-open-ui .rmp-playlist-right-arrow {
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
+        .rmp-custom-module-icon {
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            left: 9px;
+            top: 9px;
+            background-position: center;
+            background-size: 100%;
+            transition-property: background-image;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-module-overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-module-overlay-icons {
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .rmp-module-overlay-close {
+            right: 8px;
+        }
+
+        .rmp-module-overlay-play-pause {
+            left: 8px;
+        }
+
+        .rmp-module-overlay label {
+            display: none;
+        }
+
+        .rmp-overlay-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        .rmp-overlay-levels-area {
+            margin-bottom: 12px;
+        }
+
+        .rmp-overlay-level {
+            position: relative;
+            height: 30px;
+            line-height: 26px;
+            width: 172px;
+            padding: 0 4px;
+            left: 50%;
+            margin-left: -86px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            border: 2px solid;
+            cursor: pointer;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            transition-property: background, color, border-color;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rmp-overlay-title {
+            position: relative;
+            height: 40px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            line-height: 40px;
+            overflow: hidden;
+        }
+
+        .rmp-overlay-title-text {
+            font-size: 16px;
+        }
+
+        .rmp-sup {
+            vertical-align: top;
+            top: -4px;
+            position: relative;
+            font-size: 10px;
+            line-height: inherit;
+        }
+
+        /* hint for module */
+        .rmp-hint,
+        .rmp-in-module-hint {
+            display: inline-block;
+            opacity: 0;
+            right: 0;
+            font-size: 14px;
+            position: absolute;
+            top: 52px;
+            padding: 0 8px;
+            height: 24px;
+            line-height: 24px;
+            white-space: nowrap;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            transition-property: opacity;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-in-module-hint {
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .rmp-mobile .rmp-hint,
+        .rmp-no-hint .rmp-hint,
+        .rmp-doubleextrasmall .rmp-hint,
+        .rmp-mobile .rmp-in-module-hint,
+        .rmp-no-hint .rmp-in-module-hint,
+        .rmp-doubleextrasmall .rmp-in-module-hint {
+            display: none !important;
+        }
+
+        .rmp-module-overlay-close .rmp-in-module-hint {
+            right: 0;
+            left: auto;
+            transform: none;
+        }
+
+        .rmp-module-overlay-play-pause .rmp-in-module-hint {
+            right: auto;
+            left: 0;
+            transform: none;
+        }
+
+        .rmp-module:hover .rmp-hint,
+        .rmp-module-overlay-icons:hover .rmp-in-module-hint {
+            opacity: 1;
+        }
+
+        /**
+ * quality module
+ */
+        .rmp-quality-indicator {
+            border: 1px solid #ffffff;
+            padding: 4px;
+        }
+
+        /**
+ * sharing module
+ */
+        .rmp-sharing-social {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .rmp-sharing-social-icons {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .rmp-sharing-link {
+            position: relative;
+            height: 30px;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .rmp-sharing-input {
+            position: absolute;
+            left: 20%;
+            width: 60%;
+            height: 26px;
+            line-height: 26px;
+            vertical-align: top;
+            color: #000000;
+            padding: 0 6px;
+            background: #ffffff;
+            border: none;
+            border-radius: 4px;
+            background-clip: padding-box;
+        }
+
+        .rmp-sharing-code {
+            position: relative;
+            height: 30px;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .rmp-i-link,
+        .rmp-i-code {
+            position: absolute;
+            left: 8%;
+            width: 8%;
+        }
+
+        .rmp-i-copy {
+            position: absolute;
+            right: 8%;
+            width: 8%;
+            cursor: pointer;
+        }
+
+        /**
+ * chaptering module
+ */
+        .rmp-chapters-text {
+            width: 320px;
+            margin-left: -160px;
+        }
+
+        .rmp-extrasmall .rmp-chapters-text {
+            width: 208px;
+            margin-left: -104px;
+            font-size: 12px;
+        }
+
+        /**
+ * Info module
+ */
+        .rmp-info-text {
+            padding: 0 56px;
+            text-align: left;
+        }
+
+        /**
+ * This section applies to FCC settings in the CC menu
+ */
+        .rmp-module-fcc-settings {
+            left: 50%;
+            margin-left: -86px;
+            height: 30px;
+            line-height: 26px;
+            width: 172px;
+            position: relative;
+            border: 2px solid;
+            background: none;
+            transition-property: color, border-color;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-module-fcc-settings-default {
+            margin-top: 20px;
+            margin-bottom: 22px;
+        }
+
+        .rmp-overlay-fcc-settings-area .rmp-select {
+            position: relative;
+            display: block;
+            text-align: center;
+            text-transform: capitalize;
+            left: 50%;
+            padding: 2px;
+            color: #333;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-clip: padding-box;
+            transform: translate(-50%, 0);
+        }
+
+        .rmp-overlay-fcc-settings-area .rmp-option {
+            text-transform: capitalize;
+        }
+
+        .rmp-module-overlay .rmp-overlay-fcc-settings-area label {
+            position: relative;
+            display: block;
+            text-align: center;
+            margin: 12px 0 6px;
+        }
+
+        .rmp-overlay-level-active>span:first-of-type::before {
+            content: "\2714";
+            padding: 0 4px 0 0;
+        }
+
+        /**
+ * floating module
+ */
+        #rmp-anchor-element {
+            box-sizing: border-box;
+        }
+
+        /* Movable element - when player is in detached mode */
+        .rmp-container.rmp-detach {
+            width: 240px !important;
+            height: 135px !important;
+            position: fixed;
+            bottom: 8px;
+            right: 8px;
+            z-index: 999999;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        @media (min-width: 400px) {
+            .rmp-container.rmp-detach {
+                width: 320px !important;
+                height: 180px !important;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .rmp-container.rmp-detach {
+                width: 480px !important;
+                height: 270px !important;
+            }
+        }
+
+        .rmp-floating {
+            display: none;
+        }
+
+        .rmp-detach .rmp-floating {
+            display: block;
+        }
+
+        /* 
+ * Live UI (not DVR UI)
+ */
+        .rmp-live .rmp-time-elapsed-text::before {
+            content: "\2022";
+            margin-right: 2px;
+            font-size: 50px;
+            vertical-align: top;
+        }
+
+        .rmp-live .rmp-seek-bar,
+        .rmp-live .rmp-duration-text,
+        .rmp-live .rmp-time-separator {
+            display: none;
+        }
+
+        .rmp-live.rmp-small .rmp-time,
+        .rmp-live.rmp-extrasmall .rmp-time,
+        .rmp-live.rmp-doubleextrasmall .rmp-time {
+            height: 24px;
+            line-height: 16px;
+        }
+
+        /* 
+ * DVR UI 
+ */
+        /* when casting is engaged DVR streams are handled as simple live streams by Google Cast receiving app */
+        .rmp-casting.rmp-dvr .rmp-time-total,
+        .rmp-casting.rmp-dvr .rmp-duration-text,
+        .rmp-dvr .rmp-time-separator {
+            display: none;
+        }
+
+        .rmp-dvr .rmp-time {
+            cursor: pointer;
+        }
+
+        .rmp-dvr .rmp-time-elapsed-text {
+            padding: 3px 6px;
+            top: -6px;
+        }
+
+        .rmp-dvr.rmp-dvr-vod .rmp-time-elapsed-text::before {
+            content: "\21BA";
+            padding-right: 2px;
+        }
+
+        .rmp-dvr.rmp-dvr-vod .rmp-i-dvr {
+            display: none;
+        }
+
+        .rmp-dvr.rmp-dvr-vod .rmp-duration-text {
+            display: inline;
+            margin-left: 8px;
+            font-size: 12px;
+        }
+
+        .rmp-dvr.rmp-dvr-vod .rmp-time-elapsed-text {
+            top: 0;
+        }
+
+        .rmp-dvr.rmp-dvr-vod .rmp-time {
+            overflow: visible;
+        }
+
+        .rmp-dvr.rmp-dvr-vod.rmp-small .rmp-quality .rmp-control-bar-hint,
+        .rmp-dvr.rmp-dvr-vod.rmp-small .rmp-fullscreen .rmp-control-bar-hint,
+        .rmp-dvr.rmp-dvr-vod.rmp-extrasmall .rmp-quality .rmp-control-bar-hint,
+        .rmp-dvr.rmp-dvr-vod.rmp-extrasmall .rmp-fullscreen .rmp-control-bar-hint {
+            display: none;
+        }
+
+        .rmp-dvr.rmp-dvr-vod.rmp-small .rmp-time,
+        .rmp-dvr.rmp-dvr-vod.rmp-extrasmall .rmp-time,
+        .rmp-dvr.rmp-dvr-vod.rmp-doubleextrasmall .rmp-time {
+            height: 36px;
+            line-height: 28px;
+            width: 120px;
+        }
+
+        /* rmp-dvr-live class is on when we are in live mode inside a DVR stream */
+        .rmp-dvr.rmp-dvr-live .rmp-i-dvr {
+            margin-left: 16px;
+            display: inline;
+        }
+
+        .rmp-dvr.rmp-dvr-live.rmp-small .rmp-i-dvr,
+        .rmp-dvr.rmp-dvr-live.rmp-extrasmall .rmp-i-dvr {
+            margin-left: 8px;
+        }
+
+        .rmp-dvr.rmp-dvr-live .rmp-duration-text {
+            display: none;
+        }
+
+        /* Google Cast - .rmp-cast is the module for casting - also has the .rmp-module class */
+        .rmp-cast {
+            position: absolute;
+            cursor: pointer;
+            display: block;
+            opacity: 1;
+        }
+
+        /* the Google-provided cast button within the module */
+        google-cast-launcher {
+            padding: 0;
+            margin: 0;
+            border: none;
+            display: inline-block;
+            background: transparent;
+            width: 30px;
+            height: 30px;
+            margin-top: 9px;
+            cursor: pointer;
+            outline: none;
+            float: none;
+            text-align: center;
+            -webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.2));
+            /* stylelint-disable-line property-no-vendor-prefix */
+            filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.2));
+        }
+
+        /* when casting is engaged .rmp-casting is applied on player container (.rmp-container) */
+        .rmp-casting-module-overlay-open .rmp-cast-diplay-message-area {
+            display: none !important;
+        }
+
+        .rmp-casting .rmp-cast-diplay-message-area {
+            display: block;
+        }
+
+        /* when casting all modules, logo, fullscreen, chapters should be hidden ... */
+        .rmp-casting .rmp-module,
+        .rmp-casting .rmp-quality,
+        .rmp-casting .rmp-logo,
+        .rmp-casting .rmp-loaded,
+        .rmp-casting .rmp-fullscreen,
+        .rmp-casting .rmp-title-area {
+            display: none !important;
+        }
+
+        /* ... except for the closed captions, related, audio and cast modules
+ * on Android Google Cast module is adjusted with physical devices */
+        .rmp-casting:not(.rmp-casting-module-overlay-open) .rmp-module.rmp-cast,
+        .rmp-casting:not(.rmp-casting-module-overlay-open) .rmp-module.rmp-related,
+        .rmp-casting:not(.rmp-casting-module-overlay-open) .rmp-control-bar,
+        .rmp-casting:not(.rmp-casting-module-overlay-open):not(.rmp-waiting) .rmp-mobile-central-ui,
+        .rmp-casting:not(.rmp-casting-module-overlay-open) .rmp-playlist-left-arrow,
+        .rmp-casting:not(.rmp-casting-module-overlay-open) .rmp-playlist-right-arrow {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+
+        /* we do not support casting captions and multi audio tracks with Google Cast Cordova as of now */
+        .rmp-casting.rmp-casting-cordova .rmp-module.rmp-captions,
+        .rmp-casting.rmp-casting-cordova .rmp-module.rmp-audio {
+            display: none !important;
+        }
+
+        .rmp-casting .rmp-module-overlay {
+            z-index: 1;
+        }
+
+        .rmp-casting .rmp-poster {
+            display: block !important;
+        }
+
+        /* 360 layout */
+        .rmp-360-ui .rmp-content {
+            touch-action: none;
+        }
+
+        .rmp-canvas-360 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rmp-360-nav {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 114px;
+            height: 156px;
+            opacity: 1;
+            visibility: visible;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-small .rmp-360-nav {
+            height: 106px;
+            width: 106px;
+        }
+
+        .rmp-doubleextrasmall .rmp-360-nav,
+        .rmp-extrasmall .rmp-360-nav,
+        .rmp-doubleextrasmall .rmp-360-text {
+            display: none !important;
+        }
+
+        .rmp-360-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 24px;
+            margin-left: -40px;
+            margin-top: -78px;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .rmp-extrasmall .rmp-360-text {
+            font-size: 16px;
+            width: 48px;
+            height: 24px;
+            line-height: 24px;
+            margin-left: -24px;
+            margin-top: -58px;
+        }
+
+        .rmp-360-nav-button {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+        }
+
+        .rmp-360-nav-top {
+            top: 6px;
+            left: 42px;
+        }
+
+        .rmp-small .rmp-360-nav-top {
+            top: 4px;
+            left: 38px;
+        }
+
+        .rmp-360-nav-bottom {
+            left: 42px;
+            top: 78px;
+        }
+
+        .rmp-small .rmp-360-nav-bottom {
+            left: 38px;
+            top: 72px;
+        }
+
+        .rmp-360-nav-left {
+            left: 6px;
+            top: 42px;
+        }
+
+        .rmp-small .rmp-360-nav-left {
+            left: 4px;
+            top: 38px;
+        }
+
+        .rmp-360-nav-right {
+            left: 78px;
+            top: 42px;
+        }
+
+        .rmp-small .rmp-360-nav-right {
+            left: 72px;
+            top: 38px;
+        }
+
+        .rmp-360-nav-plus {
+            left: 78px;
+            top: 120px;
+        }
+
+        .rmp-360-nav-reset {
+            left: 42px;
+            top: 120px;
+        }
+
+        .rmp-360-nav-minus {
+            left: 6px;
+            top: 120px;
+        }
+
+        .rmp-small .rmp-360-nav-plus,
+        .rmp-small .rmp-360-nav-reset,
+        .rmp-small .rmp-360-nav-minus {
+            display: none;
+        }
+
+        /* ==========================================================================
+   This section applies to styling CC/subtitles when they are rendered
+   with vtt.js or natively
+   This includes styling for CC/subtitles according to FCC settings
+   ========================================================================== */
+        /**
+ * vtt.js
+ */
+        /* closed caption rendering area  */
+        .rmp-cc-area {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            transition-property: bottom;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* when control bar is visible move up CAPTIONS area so that captions are not hidden by control bar */
+        .rmp-chrome .rmp-cc-area {
+            bottom: 40px;
+        }
+
+        /* when control bar is NOT visible move down CAPTIONS area */
+        .rmp-no-chrome .rmp-cc-area {
+            bottom: 0;
+        }
+
+        /* .rmp-cc-display is child of .rmp-cc-container child of .rmp-cc-area - apply CSS if required
+   for FCC settings this is the window area */
+        .rmp-cc-display {
+            padding: 1px 2px;
+            font-size: 17px !important;
+            background-color: rgba(0, 0, 0, 0) !important;
+        }
+
+        /* .rmp-cc-cue is child of .rmp-cc-display */
+        .rmp-cc-cue {
+            margin: 0;
+            float: none;
+            text-transform: none;
+            vertical-align: baseline;
+            border: none;
+            padding: 1px 2px;
+            color: #ffffff !important;
+            text-shadow: none;
+            font-size: 100% !important;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+        }
+
+        .rmp-fullscreen-on .rmp-cc-cue {
+            font-size: 150% !important;
+        }
+
+        /**
+ * This section applies to CC when they are rendered through DASH & hls.js (in-band or in-manifest) 
+ * In this case we use the native browser CC rendering engine
+ */
+        .rmp-chrome.rmp-s1 video.rmp-video::-webkit-media-text-track-container {
+            transform: translateY(-48px);
+        }
+
+        .rmp-no-chrome.rmp-s1 video.rmp-video::-webkit-media-text-track-container {
+            transform: translateY(0);
+        }
+
+        .rmp-chrome.rmp-s2 video.rmp-video::-webkit-media-text-track-container {
+            transform: translateY(-54px);
+        }
+
+        .rmp-no-chrome.rmp-s2 video.rmp-video::-webkit-media-text-track-container {
+            transform: translateY(0);
+        }
+
+        video.rmp-video::-webkit-media-text-track-container {
+            transition-property: transform;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-transcripts-container {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+        }
+
+        .rmp-transcripts-container * {
+            box-sizing: border-box;
+        }
+
+        .rmp-transcripts-player-wrapper {
+            float: none;
+        }
+
+        /* transcripts side menu */
+        .rmp-transcripts-side-menu {
+            overflow: auto;
+            overflow-x: hidden;
+            position: relative;
+            float: none;
+            height: auto;
+            max-height: 480px;
+            width: 100%;
+        }
+
+        /* transcripts side menu header */
+        .rmp-transcripts-header {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+        }
+
+        .rmp-transcripts-body {
+            padding: 5px 10px;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* transcripts side menu item */
+        .rmp-transcripts-item {
+            height: 64px;
+            position: relative;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 2px;
+            transition-property: color, background;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        @media (min-width: 768px) {
+            .rmp-transcripts-container {
+                width: 740px;
+                height: 270px;
+            }
+
+            .rmp-transcripts-player-wrapper {
+                width: 480px;
+                height: 270px;
+                float: left;
+            }
+
+            .rmp-transcripts-side-menu {
+                float: left;
+                width: 260px;
+                height: 270px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .rmp-transcripts-container {
+                width: 980px;
+                height: 360px;
+            }
+
+            .rmp-transcripts-player-wrapper {
+                width: 640px;
+                height: 360px;
+                float: left;
+            }
+
+            .rmp-transcripts-side-menu {
+                float: left;
+                width: 340px;
+                height: 360px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .rmp-transcripts-container {
+                width: 1180px;
+                height: 468px;
+            }
+
+            .rmp-transcripts-player-wrapper {
+                width: 832px;
+                height: 468px;
+                float: left;
+            }
+
+            .rmp-transcripts-side-menu {
+                float: left;
+                width: 348px;
+                height: 468px;
+            }
+        }
+
+        /* control bar related skip button */
+        .rmp-related-skip-next {
+            cursor: pointer;
+            position: absolute;
+            left: 104px;
+            width: 48px;
+            height: 48px;
+            white-space: nowrap;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        .rmp-container.rmp-related-ui .rmp-time {
+            left: 152px;
+        }
+
+        .rmp-container.rmp-related-ui.rmp-small .rmp-time,
+        .rmp-container.rmp-related-ui.rmp-extrasmall .rmp-time {
+            left: auto;
+            right: 8px;
+        }
+
+        .rmp-container.rmp-related-ui .rmp-seek-bar {
+            left: 264px;
+            width: calc(100% - 264px - 120px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-small .rmp-seek-bar,
+        .rmp-container.rmp-related-ui.rmp-extrasmall .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 120px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-extrasmall .rmp-related-skip-preview,
+        .rmp-container.rmp-related-ui.rmp-doubleextrasmall .rmp-related-skip-preview,
+        .rmp-container.rmp-related-ui.rmp-doubleextrasmall .rmp-seek-bar {
+            display: none !important;
+        }
+
+        .rmp-container.rmp-related-ui.rmp-captions-ui .rmp-seek-bar,
+        .rmp-container.rmp-related-ui.rmp-audio-ui .rmp-seek-bar {
+            width: calc(100% - 264px - 168px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-captions-ui.rmp-small .rmp-seek-bar,
+        .rmp-container.rmp-related-ui.rmp-audio-ui.rmp-small .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 168px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-captions-ui.rmp-extrasmall .rmp-seek-bar,
+        .rmp-container.rmp-related-ui.rmp-audio-ui.rmp-extrasmall .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 120px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-captions-ui.rmp-audio-ui .rmp-seek-bar {
+            left: 264px;
+            width: calc(100% - 264px - 216px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-captions-ui.rmp-audio-ui.rmp-small .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 216px);
+        }
+
+        .rmp-container.rmp-related-ui.rmp-captions-ui.rmp-audio-ui.rmp-extrasmall .rmp-seek-bar {
+            left: 168px;
+            width: calc(100% - 168px - 120px);
+        }
+
+        /* skip overlay */
+        .rmp-related-skip-preview {
+            position: absolute;
+            top: -152px;
+            left: 20px;
+            margin-left: -25px;
+            width: 192px;
+            height: 152px;
+            opacity: 0;
+            visibility: hidden;
+            font-size: 14px;
+            cursor: pointer;
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-small .rmp-related-skip-preview {
+            top: -124px;
+            width: 156px;
+            height: 124px;
+        }
+
+        .rmp-extrasmall .rmp-related-skip-preview {
+            top: -96px;
+            width: 120px;
+            height: 96px;
+            font-size: 12px;
+        }
+
+        .rmp-related-skip-preview-img {
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 22px;
+            width: 192px;
+            height: 108px;
+        }
+
+        .rmp-small .rmp-related-skip-preview-img {
+            width: 156px;
+            height: 80px;
+        }
+
+        .rmp-extrasmall .rmp-related-skip-preview-img {
+            width: 120px;
+            height: 52px;
+        }
+
+        .rmp-related-skip-preview-up-next {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 4px;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+        }
+
+        .rmp-related-ui .rmp-related-skip-preview-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 4px;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* related wall */
+        .rmp-related-item {
+            cursor: pointer;
+            position: absolute;
+            background: #000000;
+            margin-bottom: 12px;
+            transition-property: border-color;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-related-thumbnail {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .rmp-related-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rmp-related-duration {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: auto;
+            padding: 0 5px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+        .rmp-related-up-next {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            padding: 0 5px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+        .rmp-related-item-bottom-margin {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 28px;
+            background-color: transparent;
+        }
+
+        /* Audio only related */
+        .rmp-related-audio-only .rmp-poster {
+            display: block !important;
+        }
+
+        /* playlist slider + player container */
+        .rmp-playlist-container {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: "Arial", "Helvetica", sans-serif !important;
+        }
+
+        .rmp-playlist-container * {
+            box-sizing: border-box;
+        }
+
+        .rmp-playlist-player-wrapper {
+            float: none;
+        }
+
+        /* in-player navigation arrows */
+        .rmp-playlist-left-arrow {
+            left: 8px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            opacity: 1;
+            visibility: visible;
+            cursor: pointer;
+            border-radius: 4px;
+            background-clip: padding-box;
+            transform: translateY(-50%);
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-playlist-right-arrow {
+            right: 8px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            opacity: 1;
+            visibility: visible;
+            cursor: pointer;
+            border-radius: 4px;
+            background-clip: padding-box;
+            transform: translateY(-50%);
+            transition-property: opacity, visibility;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* playlist side menu */
+        .rmp-playlist-side-menu {
+            overflow: auto;
+            overflow-x: hidden;
+            position: relative;
+            float: none;
+            height: auto;
+            max-height: 480px;
+            width: 100%;
+        }
+
+        /* playlist side menu header */
+        .rmp-playlist-header {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+        }
+
+        /* playlist side menu item */
+        .rmp-playlist-item {
+            height: 64px;
+            position: relative;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .rmp-playlist-item:focus {
+            outline: none;
+        }
+
+        .rmp-playlist-item:hover {
+            border-color: transparent;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* playlist side menu item number */
+        .rmp-playlist-item-number {
+            position: absolute;
+            left: 0;
+            width: 6%;
+            text-align: center;
+            line-height: 64px;
+            font-size: 14px;
+        }
+
+        /* playlist side menu item img */
+        .rmp-playlist-item-thumbnail-wrapper {
+            position: absolute;
+            top: 50%;
+            width: 15%;
+            height: auto;
+            left: 9%;
+        }
+
+        .rmp-playlist-item-thumbnail {
+            width: 100%;
+            height: auto;
+            max-height: 49px;
+            max-width: 84px;
+            transform: translateY(-50%);
+        }
+
+        /* playlist side menu item text section */
+        .rmp-playlist-item-text-area {
+            position: absolute;
+            left: 27%;
+            width: 70%;
+            top: 50%;
+            max-height: 100%;
+            overflow: hidden;
+            padding: 2px 2px 2px 0;
+            transform: translateY(-50%);
+        }
+
+        /* playlist side menu item title */
+        .rmp-playlist-item-title {
+            width: 100%;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* playlist side menu item description */
+        .rmp-playlist-item-description {
+            width: 100%;
+            opacity: 0.85;
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            display: -webkit-box;
+            /* stylelint-disable-line value-no-vendor-prefix */
+            -webkit-line-clamp: 2;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            box-orient: vertical;
+        }
+
+        .rmp-playlist-item-active {
+            border-color: transparent;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .rmp-doubleextrasmall .rmp-playlist-right-arrow,
+        .rmp-doubleextrasmall .rmp-playlist-left-arrow {
+            display: none !important;
+        }
+
+        /* Audio only playlist */
+        .rmp-playlist-audio-only .rmp-poster {
+            display: block !important;
+        }
+
+        /* media queries */
+        @media (min-width: 768px) {
+            .rmp-playlist-player-wrapper {
+                width: 480px;
+                height: 270px;
+                float: left;
+            }
+
+            .rmp-playlist-container {
+                width: 720px;
+                height: 270px;
+            }
+
+            .rmp-playlist-side-menu {
+                float: left;
+                width: 240px;
+                height: 270px;
+            }
+
+            .rmp-playlist-item-number {
+                width: 25px;
+            }
+
+            .rmp-playlist-item-thumbnail {
+                max-height: none;
+                max-width: none;
+                height: 100%;
+            }
+
+            .rmp-playlist-item-thumbnail-wrapper {
+                left: 25px;
+                width: 69px;
+                height: 40px;
+            }
+
+            .rmp-playlist-item-text-area {
+                left: 104px;
+                width: 126px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .rmp-playlist-player-wrapper {
+                width: 640px;
+                height: 360px;
+                float: left;
+            }
+
+            .rmp-playlist-container {
+                width: 960px;
+                height: 360px;
+            }
+
+            .rmp-playlist-side-menu {
+                float: left;
+                width: 320px;
+                height: 360px;
+            }
+
+            .rmp-playlist-item-number {
+                width: 25px;
+            }
+
+            .rmp-playlist-item-thumbnail-wrapper {
+                left: 25px;
+                width: 84px;
+                height: 49px;
+            }
+
+            .rmp-playlist-item-text-area {
+                left: 119px;
+                width: 179px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .rmp-playlist-player-wrapper {
+                width: 832px;
+                height: 468px;
+                float: left;
+            }
+
+            .rmp-playlist-container {
+                width: 1140px;
+                height: 468px;
+            }
+
+            .rmp-playlist-side-menu {
+                float: left;
+                width: 308px;
+                height: 468px;
+            }
+        }
+
+        /* audio-only */
+        /* audio only */
+        .rmp-audio-only .rmp-title-area,
+        .rmp-audio-only .rmp-module:not(.rmp-cast):not(.rmp-airplay),
+        .rmp-audio-only .rmp-quality,
+        .rmp-audio-only .rmp-audio,
+        .rmp-audio-only .rmp-captions,
+        .rmp-audio-only .rmp-overlay-button,
+        .rmp-audio-only .rmp-mobile-central-ui,
+        .rmp-audio-only .rmp-indicator,
+        .rmp-audio-only .rmp-fullscreen,
+        .rmp-audio-only .rmp-volume-container {
+            display: none !important;
+        }
+
+        /* do not auto hide controls bar */
+        .rmp-audio-only .rmp-control-bar {
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+
+        /* error when audioOnly */
+        .rmp-audio-only .rmp-error-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000000;
+            color: #ffffff;
+            height: 100%;
+            width: 100%;
+            line-height: 48px;
+            padding: 0;
+            border: none;
+            z-index: 1000;
+            margin-top: 0;
+            font-size: 14px;
+            transform: none;
+        }
+
+        .rmp-audio-only .rmp-volume,
+        .rmp-audio-only.rmp-small .rmp-volume,
+        .rmp-audio-only.rmp-extrasmall .rmp-volume,
+        .rmp-audio-only .rmp-volume-container,
+        .rmp-audio-only.rmp-small .rmp-volume-container,
+        .rmp-audio-only.rmp-extrasmall .rmp-volume-container {
+            left: 56px;
+        }
+
+        .rmp-audio-only .rmp-i-minus {
+            position: absolute;
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            left: 104px;
+        }
+
+        .rmp-audio-only .rmp-i-plus {
+            position: absolute;
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            left: 152px;
+        }
+
+        .rmp-audio-only .rmp-time {
+            left: 200px;
+        }
+
+        .rmp-audio-only.rmp-small .rmp-time,
+        .rmp-audio-only.rmp-extrasmall .rmp-time {
+            left: 200px;
+            right: auto;
+            bottom: 0;
+            background: none;
+            height: 48px;
+            line-height: 48px;
+            padding: 0;
+            font-size: 12px;
+            width: 84px;
+        }
+
+        .rmp-audio-only .rmp-seek-bar {
+            left: 312px;
+            width: calc(100% - 312px - 24px);
+        }
+
+        .rmp-audio-only.rmp-cast-ui .rmp-seek-bar,
+        .rmp-audio-only.rmp-airplay-ui .rmp-seek-bar {
+            width: calc(100% - 312px - 72px);
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            left: 360px;
+            width: calc(100% - 360px - 24px);
+        }
+
+        .rmp-audio-only.rmp-cast-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-audio-only.rmp-airplay-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            width: calc(100% - 360px - 72px);
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            left: 408px;
+            width: calc(100% - 408px - 24px);
+        }
+
+        .rmp-audio-only.rmp-cast-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar,
+        .rmp-audio-only.rmp-airplay-ui.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            width: calc(100% - 408px - 72px);
+        }
+
+        .rmp-audio-only .rmp-cast,
+        .rmp-audio-only .rmp-airplay {
+            right: 8px !important;
+            top: 0;
+            width: 48px;
+            height: 48px;
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+
+        .rmp-audio-only.rmp-extrasmall .rmp-cast,
+        .rmp-audio-only.rmp-extrasmall .rmp-airplay,
+        .rmp-audio-only.rmp-small .rmp-seek-bar,
+        .rmp-audio-only.rmp-extrasmall .rmp-seek-bar,
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-seek-bar,
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-airplay,
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-cast,
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-quick-rewind-or-forward,
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-quick-rewind-and-forward {
+            display: none !important;
+        }
+
+        .rmp-audio-only.rmp-small .rmp-quick-rewind-or-forward,
+        .rmp-audio-only.rmp-extrasmall .rmp-quick-rewind-or-forward,
+        .rmp-audio-only.rmp-small .rmp-quick-rewind-and-forward,
+        .rmp-audio-only.rmp-extrasmall .rmp-quick-rewind-and-forward {
+            display: block !important;
+        }
+
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-i-minus {
+            left: auto;
+            right: 56px;
+        }
+
+        .rmp-audio-only.rmp-doubleextrasmall .rmp-i-plus {
+            left: auto;
+            right: 8px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-quick-rewind-or-forward-ui .rmp-volume-container,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-or-forward-ui .rmp-volume-container,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume-container {
+            left: 104px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-or-forward-ui .rmp-i-minus,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-or-forward-ui .rmp-i-minus,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-i-minus {
+            left: 152px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-or-forward-ui .rmp-i-plus,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-or-forward-ui .rmp-i-plus,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-i-plus {
+            left: 200px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-or-forward-ui .rmp-time {
+            left: 248px;
+        }
+
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-or-forward-ui .rmp-time,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-time,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-or-forward-ui .rmp-seek-bar {
+            display: none !important;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-and-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-and-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-and-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-quick-rewind-and-forward-ui .rmp-volume-container,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-and-forward-ui .rmp-volume-container,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-and-forward-ui .rmp-volume-container {
+            left: 152px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-and-forward-ui .rmp-i-minus,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-and-forward-ui .rmp-i-minus,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-and-forward-ui .rmp-i-minus {
+            left: 200px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-and-forward-ui .rmp-i-plus,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-and-forward-ui .rmp-i-plus,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-and-forward-ui .rmp-i-plus {
+            left: 248px;
+        }
+
+        .rmp-audio-only.rmp-quick-rewind-and-forward-ui .rmp-time {
+            left: 296px;
+        }
+
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-and-forward-ui .rmp-time,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-and-forward-ui .rmp-time,
+        .rmp-audio-only.rmp-small.rmp-quick-rewind-and-forward-ui .rmp-seek-bar,
+        .rmp-audio-only.rmp-extrasmall.rmp-quick-rewind-and-forward-ui .rmp-seek-bar {
+            display: none !important;
+        }
+
+        .rmp-audio-only.rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-audio-only.rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-volume-container {
+            left: 56px;
+        }
+
+        .rmp-audio-only.rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-i-minus {
+            left: 104px;
+        }
+
+        .rmp-audio-only.rmp-doubleextrasmall.rmp-quick-rewind-or-forward-ui .rmp-i-plus {
+            left: 152px;
+        }
+
+        /* DVR adjustment */
+        .rmp-dvr.rmp-small .rmp-time,
+        .rmp-dvr.rmp-extrasmall .rmp-time {
+            display: none !important;
+        }
+
+        /* 
+ * spinner 
+ */
+        .rmp-audio-only .rmp-loading-spin {
+            left: 8px;
+            top: 0;
+            width: 48px;
+            height: 48px;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        .rmp-audio-only .rmp-loading-spin-circle {
+            width: 34px;
+            height: 34px;
+            top: 7px;
+            left: 7px;
+        }
+
+        .rmp-audio-only.rmp-waiting .rmp-play-pause {
+            display: none !important;
+        }
+
+        .rmp-audio-only-use-video-layout .rmp-poster {
+            display: block !important;
+        }
+
+        /* ads */
+        /* ad container where ads are rendered */
+        .rmp-ad-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            display: block;
+            text-align: initial;
+        }
+
+        /* non-linear (overlay ads) bottom offset
+   this is not applied in case non-linear ad is taking the full height of the player */
+        .rmp-ad-overlay {
+            top: -48px;
+        }
+
+        .rmp-ad-no-auto-align {
+            top: 0;
+        }
+
+        /* ad information within control bar */
+        .rmp-ad-info {
+            position: absolute;
+            left: 112px;
+            height: 48px;
+            line-height: 48px;
+            text-align: initial;
+            max-width: calc(100% - 112px - 64px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -moz-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            -ms-user-select: none;
+            /* stylelint-disable-line property-no-vendor-prefix */
+            user-select: none;
+        }
+
+        .rmp-ad-info-message {
+            padding: 3px 6px;
+            font-weight: bold;
+        }
+
+        .rmp-ad-info-pod,
+        .rmp-ad-info-countdown {
+            margin-left: 8px;
+        }
+
+        /* remaining time bar for ads */
+        .rmp-ad-current-time {
+            position: absolute;
+            bottom: 48px;
+            height: 4px;
+            transition-property: width;
+            transition-duration: 0.2s;
+            transition-timing-function: linear;
+        }
+
+        /* 
+ * skip button  
+ * This is used for Google Cast 
+ * When casting is engaged you can skip ad on the remote player
+ */
+        .rmp-ad-skip {
+            position: absolute;
+            right: 0;
+            bottom: 44px;
+            width: 138px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #333;
+            border: 1px solid #333;
+            transition-property: border-color;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-ad-skip:hover {
+            border-color: #000000;
+        }
+
+        .rmp-ad-skip-waiting {
+            width: 100%;
+            position: absolute;
+            padding: 0 4px;
+            color: #cfcfcf;
+            top: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rmp-ad-skip-message {
+            width: 65%;
+            position: absolute;
+            left: 5%;
+            top: 0;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rmp-ad-skip-icon {
+            position: absolute;
+            top: 0;
+            left: 75%;
+            width: 20%;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpi/P//PwMUNADxXyBuZsAPcoA4CIjfA/EuIJ4JFgUZBMU3/kNAMZIYNnz8PwIcgokzIdl0A0r3AHEbHhf9RGJ/hjGQDWJFYlcC8SQgZibgzf/YDEIHuUC8CIi58ahhJMYgEIgC4mVALIFNMzIgZBAI+AHxRiCWRfcOqQaBgBkQrwRiMSB+iE0BCwPxwBKIDwLxH0pcBAMPkKOcXIPmALEnED+lxKDJQJwKZUuQa1AVEOch8f+SE9hZQDydGCcjG/QPif0H6pUF+LIFriwCy1dvgTgChyEMaPmPBZuLVKA2RALxbjy+IGjQCiD+RcAQEFgF9fpHIN4GEwQIMACnXWgupdnzwwAAAABJRU5ErkJggg==);
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.75;
+            transition-property: opacity;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-ad-skip:hover .rmp-ad-skip-icon {
+            opacity: 1;
+        }
+
+        /* rmp-vast - adjustments */
+        .rmp-ad-container .rmp-ad-non-linear-container,
+        .rmp-ad-container .rmp-ad-container-skip {
+            bottom: 52px;
+        }
+
+        /* IMA DAI */
+        .rmp-ima-dai-click-area {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        /* ad scheduler */
+        .rmp-ad-markers {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 6px;
+        }
+
+        .rmp-linear-ad-ui .rmp-title-area,
+        .rmp-linear-ad-ui .rmp-module,
+        .rmp-linear-ad-ui .rmp-quality,
+        .rmp-linear-ad-ui .rmp-audio,
+        .rmp-linear-ad-ui .rmp-captions,
+        .rmp-linear-ad-ui .rmp-fullscreen .rmp-control-bar-hint,
+        .rmp-linear-ad-ui .rmp-quick-rewind-or-forward,
+        .rmp-linear-ad-ui .rmp-quick-rewind-and-forward,
+        .rmp-linear-ad-ui .rmp-fast-rewind,
+        .rmp-linear-ad-ui .rmp-fast-forward,
+        .rmp-linear-ad-ui .rmp-i-plus,
+        .rmp-linear-ad-ui .rmp-i-minus {
+            display: none !important;
+        }
+
+        /* 
+ * VPAID 
+ *
+ * VPAID with no controls or full-slot ad sense === no UI while ad is on stage 
+ */
+        .rmp-ad-no-ui .rmp-control-bar,
+        .rmp-ad-no-ui .rmp-module,
+        .rmp-ad-no-ui .rmp-loading-spin,
+        .rmp-ad-no-ui .rmp-mobile-central-ui,
+        .rmp-ad-no-ui .rmp-overlay-button {
+            display: none !important;
+        }
+
+        /* VPAID with adVpaidControls: true - force display of controls */
+        .rmp-ad-vpaid-force-controls .rmp-control-bar {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .rmp-linear-ad-ui.rmp-quick-rewind-or-forward-ui .rmp-volume,
+        .rmp-linear-ad-ui.rmp-quick-rewind-or-forward-ui .rmp-volume-container {
+            left: 56px;
+        }
+
+        /* icons */
+        .rmp-i {
+            font-family: 'rmp-font' !important;
+            /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+            speak: never;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+            transition-property: color;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in;
+        }
+
+        .rmp-i-captions::before {
+            content: "\e048";
+        }
+
+        .rmp-i-facebook::before {
+            content: "\f09a";
+        }
+
+        .rmp-i-twitter::before {
+            content: "\f099";
+        }
+
+        .rmp-i-linkedin::before {
+            content: "\f0e1";
+        }
+
+        .rmp-i-reddit::before {
+            content: "\f281";
+        }
+
+        .rmp-i-whatsapp::before {
+            content: "\f232";
+        }
+
+        .rmp-i-email::before {
+            content: "\f003";
+        }
+
+        .rmp-i-code::before {
+            content: "\f121";
+        }
+
+        .rmp-i-link::before {
+            content: "\f0c1";
+        }
+
+        .rmp-i-copy::before {
+            content: "\f0c5";
+        }
+
+        .rmp-i-left::before {
+            content: "\f137";
+        }
+
+        .rmp-i-right::before {
+            content: "\f138";
+        }
+
+        .rmp-i-up::before {
+            content: "\f139";
+        }
+
+        .rmp-i-down::before {
+            content: "\f13a";
+        }
+
+        .rmp-i-plus-360::before {
+            content: "\f055";
+        }
+
+        .rmp-i-minus-360::before {
+            content: "\f056";
+        }
+
+        .rmp-i-reset-360::before {
+            content: "\f192";
+        }
+
+        .rmp-i-dvr::before {
+            content: "\e91b";
+        }
+
+        .rmp-i-quick-rewind-5::before {
+            content: "\e05b";
+        }
+
+        .rmp-i-quick-rewind-10::before {
+            content: "\e059";
+        }
+
+        .rmp-i-quick-rewind-30::before {
+            content: "\e05a";
+        }
+
+        .rmp-i-quick-rewind-tv::before {
+            content: "\e059";
+        }
+
+        .rmp-i-quick-forward-5::before {
+            content: "\e058";
+        }
+
+        .rmp-i-quick-forward-10::before {
+            content: "\e05d";
+        }
+
+        .rmp-i-quick-forward-30::before {
+            content: "\e057";
+        }
+
+        .rmp-i-quick-forward-tv::before {
+            content: "\e05d";
+        }
+
+        .rmp-i-airplay::before {
+            content: "\e055";
+        }
+
+        .rmp-i-airplay-connected {
+            color: #2196f3;
+        }
+
+        .rmp-i-google-cast::before {
+            content: "\e307";
+        }
+
+        .rmp-i-google-cast-connected::before {
+            content: "\e308";
+            color: #2196f3;
+        }
+
+        .rmp-i-pip::before {
+            content: "\e926";
+        }
+
+        .rmp-i-info::before {
+            content: "\e88f";
+        }
+
+        .rmp-i-loop::before {
+            content: "\e041";
+        }
+
+        .rmp-i-theater::before {
+            content: "\e3bc";
+        }
+
+        .rmp-theater-on .rmp-i-theater::before {
+            content: "\e3c0";
+        }
+
+        .rmp-i-chapters::before {
+            content: "\f02e";
+        }
+
+        .grabbing {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+            /* stylelint-disable-line value-no-vendor-prefix */
+        }
+
+        /* icons in the control bar */
+        .rmp-control-bar .rmp-i {
+            font-size: 1.86em;
+        }
+
+        /* icons when a module is open */
+        .rmp-module-overlay .rmp-i {
+            font-size: 2.14em;
+        }
+
+        /* playlist navigation icons */
+        .rmp-playlist-left-arrow,
+        .rmp-playlist-right-arrow {
+            font-size: 2.42em;
+        }
+
+        /* module icons */
+        .rmp-module .rmp-i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 2.14em;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 360 nav icon */
+        .rmp-360-nav-button {
+            font-size: 2.14em;
+        }
+
+        /* social icons when sharing module is open */
+        .rmp-module-overlay .rmp-sharing-social .rmp-i {
+            font-size: 2.14em;
+        }
+
+        /* central play icon */
+        .rmp-overlay-button .rmp-i-play,
+        .rmp-overlay-button .rmp-i-pause,
+        .rmp-overlay-button .rmp-i-replay,
+        .rmp-mobile-central-ui .rmp-i-play,
+        .rmp-mobile-central-ui .rmp-i-pause,
+        .rmp-mobile-central-ui .rmp-i-replay {
+            font-size: 3.14em;
+        }
+
+        .rmp-font-awesome .rmp-i-play::before {
+            content: "\f04b";
+        }
+
+        .rmp-font-awesome .rmp-i-replay::before {
+            content: "\f0e2";
+        }
+
+        .rmp-font-awesome .rmp-i-pause::before {
+            content: "\f04c";
+        }
+
+        .rmp-font-awesome .rmp-i-volume::before {
+            content: "\f028";
+        }
+
+        .rmp-font-awesome .rmp-i-volume-half::before {
+            content: "\f027";
+        }
+
+        .rmp-font-awesome .rmp-i-off-volume::before {
+            content: "\f026";
+        }
+
+        .rmp-font-awesome .rmp-i-resize-full::before {
+            content: "\f065";
+        }
+
+        .rmp-font-awesome .rmp-i-resize-small::before {
+            content: "\f066";
+        }
+
+        .rmp-font-awesome .rmp-i-close::before,
+        .rmp-font-awesome .rmp-i-floating::before {
+            content: "\f00d";
+        }
+
+        /* module icons */
+        .rmp-font-awesome .rmp-i-speed::before {
+            content: "\f017";
+        }
+
+        .rmp-font-awesome .rmp-i-quality::before {
+            content: "\f013";
+        }
+
+        .rmp-font-awesome .rmp-i-audio::before {
+            content: "\f025";
+        }
+
+        .rmp-font-awesome .rmp-i-sharing::before {
+            content: "\f1e0";
+        }
+
+        .rmp-font-awesome .rmp-i-chapters::before {
+            content: "\f02e";
+        }
+
+        /* related */
+        .rmp-font-awesome .rmp-i-related::before {
+            content: "\f00a";
+        }
+
+        .rmp-font-awesome .rmp-i-skip-next::before {
+            content: "\f051";
+        }
+
+        /* audio only */
+        .rmp-font-awesome .rmp-i-plus::before {
+            content: "\f067";
+        }
+
+        .rmp-font-awesome .rmp-i-minus::before {
+            content: "\f068";
+        }
+
+        /* navigation icons */
+        .rmp-font-awesome .rmp-i-previous::before {
+            content: "\f053";
+        }
+
+        .rmp-font-awesome .rmp-i-next::before {
+            content: "\f054";
+        }
+
+        /* rewind/forward icons */
+        .rmp-font-awesome .rmp-i-fast-rewind::before {
+            content: "\e905";
+        }
+
+        .rmp-font-awesome .rmp-i-fast-fast-rewind::before {
+            content: "\e903";
+        }
+
+        .rmp-font-awesome .rmp-i-fast-fast-fast-rewind::before {
+            content: "\e901";
+        }
+
+        .rmp-font-awesome .rmp-i-fast-forward::before {
+            content: "\e904";
+        }
+
+        .rmp-font-awesome .rmp-i-fast-fast-forward::before {
+            content: "\e902";
+        }
+
+        .rmp-font-awesome .rmp-i-fast-fast-fast-forward::before {
+            content: "\e900";
+        }
+
+        .rmp-font-material .rmp-i-play::before {
+            content: "\e037";
+        }
+
+        .rmp-font-material .rmp-i-replay::before {
+            content: "\e042";
+        }
+
+        .rmp-font-material .rmp-i-pause::before {
+            content: "\e034";
+        }
+
+        .rmp-font-material .rmp-i-volume::before {
+            content: "\e050";
+        }
+
+        .rmp-font-material .rmp-i-volume-half::before {
+            content: "\e04d";
+        }
+
+        .rmp-font-material .rmp-i-off-volume::before {
+            content: "\e04e";
+        }
+
+        .rmp-font-material .rmp-i-resize-full::before {
+            content: "\e5d0";
+        }
+
+        .rmp-font-material .rmp-i-resize-small::before {
+            content: "\e5d1";
+        }
+
+        .rmp-font-material .rmp-i-close::before,
+        .rmp-font-material .rmp-i-floating::before {
+            content: "\e5cd";
+        }
+
+        /* module icons */
+        .rmp-font-material .rmp-i-speed::before {
+            content: "\e425";
+        }
+
+        .rmp-font-material .rmp-i-quality::before {
+            content: "\e8b8";
+        }
+
+        .rmp-font-material .rmp-i-audio::before {
+            content: "\e310";
+        }
+
+        .rmp-font-material .rmp-i-sharing::before {
+            content: "\e80d";
+        }
+
+        /* related */
+        .rmp-font-material .rmp-i-related::before {
+            content: "\e5c3";
+        }
+
+        .rmp-font-material .rmp-i-skip-next::before {
+            content: "\e044";
+        }
+
+        /* audio only */
+        .rmp-font-material .rmp-i-plus::before {
+            content: "\e145";
+        }
+
+        .rmp-font-material .rmp-i-minus::before {
+            content: "\e15b";
+        }
+
+        /* navigation icons */
+        .rmp-font-material .rmp-i-previous::before {
+            content: "\e314";
+        }
+
+        .rmp-font-material .rmp-i-next::before {
+            content: "\e315";
+        }
+
+        /* spinner */
+        /* 
+ * spinner animation
+ */
+        .rmp-loading-spin-circle {
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            border: 4px solid;
+            border-color: #ffffff #ffffff transparent;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* skin specific CSS */
+        /* s1 specific CSS */
+        /* applying s1 colors to player */
+        .rmp-s1 .rmp-color-bg,
+        .rmp-s1 .rmp-module-overlay-icons,
+        .rmp-s1 .rmp-related-duration,
+        .rmp-s1 .rmp-related-up-next,
+        .rmp-s1 .rmp-related-title,
+        .rmp-s1 .rmp-volume-indicator,
+        .rmp-s1 .rmp-volume-hint,
+        .rmp-playlist-side-menu,
+        .rmp-transcripts-side-menu,
+        .rmp-s1.rmp-small .rmp-time,
+        .rmp-s1.rmp-extrasmall .rmp-time,
+        .rmp-s1.rmp-doubleextrasmall .rmp-time {
+            background: rgba(33, 33, 33, 0.85);
+        }
+
+        .rmp-s1 .rmp-ad-markers {
+            background: #82b1ff;
+        }
+
+        .rmp-s1 .rmp-overlay-level {
+            border-color: rgba(33, 33, 33, 0.85);
+        }
+
+        .rmp-s1 .rmp-overlay-level-active {
+            background: #ffffff;
+            color: rgba(33, 33, 33, 0.85);
+            border-color: #ffffff;
+        }
+
+        /* border-radius adjustment */
+        .rmp-s1 .rmp-360-nav,
+        .rmp-s1 .rmp-360-text,
+        .rmp-s1 .rmp-module,
+        .rmp-s1 .rmp-overlay-button,
+        .rmp-s1 .rmp-mobile-central-ui,
+        .rmp-s1 .rmp-loading-spin,
+        .rmp-s1 .rmp-hint,
+        .rmp-s1 .rmp-in-module-hint,
+        .rmp-s1 .rmp-control-bar-hint,
+        .rmp-s1 .rmp-volume-hint,
+        .rmp-s1 .rmp-indicator,
+        .rmp-s1 .rmp-overlay-level,
+        .rmp-s1 .rmp-module-overlay-icons,
+        .rmp-s1 .rmp-module-fcc-settings,
+        .rmp-s1 .rmp-duration,
+        .rmp-s1 .rmp-cue-point-text,
+        .rmp-s1.rmp-dvr .rmp-time-elapsed-text,
+        .rmp-s1 .rmp-quality-indicator,
+        .rmp-s1.rmp-small .rmp-time,
+        .rmp-s1.rmp-extrasmall .rmp-time,
+        .rmp-s1.rmp-doubleextrasmall .rmp-time {
+            border-radius: 4px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s1 .rmp-volume-indicator,
+        .rmp-s1.rmp-extrasmall .rmp-volume-container {
+            border-radius: 4px 4px 0 0;
+            background-clip: padding-box;
+        }
+
+        .rmp-s1 .rmp-duration {
+            border-radius: 4px 0 0 4px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s1 .rmp-volume-handle,
+        .rmp-s1 .rmp-handle {
+            border-radius: 14px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s1 .rmp-volume-bar,
+        .rmp-s1 .rmp-volume-bar-container,
+        .rmp-s1 .rmp-time-total,
+        .rmp-s1 .rmp-current,
+        .rmp-s1 .rmp-loaded {
+            border-radius: 11px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s1 .rmp-current {
+            min-width: 12px;
+        }
+
+        .rmp-s1 .rmp-loaded {
+            min-width: 18px;
+        }
+
+        .rmp-s1 .rmp-related-skip-preview-up-next {
+            border-radius: 4px 4px 0 0;
+            background-clip: padding-box;
+        }
+
+        /* seek bar adjustment */
+        .rmp-s1 .rmp-time-total {
+            top: 13px;
+            height: 22px;
+        }
+
+        .rmp-s1 .rmp-seek-bar-thumbnails .rmp-indicator {
+            border-radius: 0 0 4px 4px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s1 .rmp-seek-bar-thumbnails .rmp-thumbnails {
+            border-radius: 4px 4px 0 0;
+            background-clip: padding-box;
+        }
+
+        /* logo */
+        .rmp-s1.rmp-small .rmp-logo-bottom-right,
+        .rmp-s1.rmp-extrasmall .rmp-logo-bottom-right {
+            bottom: 80px;
+        }
+
+        /* Colors for s2 */
+        /* applying s2 colors to player */
+        .rmp-s2 .rmp-color-bg,
+        .rmp-s2 .rmp-module-overlay-icons,
+        .rmp-s2 .rmp-related-duration,
+        .rmp-s2 .rmp-related-up-next,
+        .rmp-s2 .rmp-related-title,
+        .rmp-s2 .rmp-volume-indicator,
+        .rmp-s2 .rmp-volume-hint {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .rmp-s2 .rmp-control-bar {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+        }
+
+        .rmp-s2 .rmp-ad-markers,
+        .rmp-s2 .rmp-cue-point {
+            background: #ffffff;
+        }
+
+        .rmp-s2 .rmp-volume-handle,
+        .rmp-s2 .rmp-handle,
+        .rmp-s2 .rmp-current,
+        .rmp-s2 .rmp-volume-bar {
+            background: #82b1ff;
+        }
+
+        .rmp-s2 .rmp-overlay-level:hover:not(.rmp-overlay-level-active) {
+            color: #82b1ff;
+        }
+
+        .rmp-s2 .rmp-overlay-level {
+            background: rgba(0, 0, 0, 0.8);
+            border-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .rmp-s2 .rmp-loaded {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .rmp-s2 .rmp-overlay-level-active {
+            background: #ffffff;
+            color: #82b1ff;
+            border-color: #ffffff;
+        }
+
+        .rmp-s2 .rmp-overlay-level-active.rmp-abr-active,
+        .rmp-s2 .rmp-time-total {
+            border-color: #ffffff;
+        }
+
+        .rmp-s2 .rmp-related-skip-preview-up-next,
+        .rmp-s2 .rmp-related-skip-preview-title,
+        .rmp-s2 .rmp-indicator,
+        .rmp-s2 .rmp-volume-hint,
+        .rmp-s2 .rmp-volume-indicator,
+        .rmp-s2 .rmp-cue-point-text,
+        .rmp-s2 .rmp-related-title {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .rmp-s2 .rmp-hint,
+        .rmp-s2 .rmp-in-module-hint,
+        .rmp-s2 .rmp-control-bar-hint {
+            background: rgba(0, 0, 0, 0.8);
+            border: none;
+        }
+
+        .rmp-s2 .rmp-playlist-header,
+        .rmp-s2 .rmp-playlist-item {
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* border-radius adjustment */
+        .rmp-s2 .rmp-overlay-level,
+        .rmp-s2 .rmp-time,
+        .rmp-s2 .rmp-time-total,
+        .rmp-s2 .rmp-hint,
+        .rmp-s2 .rmp-module-fcc-settings,
+        .rmp-s2 .rmp-in-module-hint,
+        .rmp-s2 .rmp-control-bar-hint,
+        .rmp-s2 .rmp-volume-hint,
+        .rmp-s2 .rmp-indicator,
+        .rmp-s2 .rmp-volume-indicator,
+        .rmp-s2 .rmp-current,
+        .rmp-s2 .rmp-loaded,
+        .rmp-s2 .rmp-volume-bar,
+        .rmp-s2 .rmp-volume-bar-container,
+        .rmp-s2 .rmp-cue-point-text,
+        .rmp-s2.rmp-dvr .rmp-time-elapsed-text,
+        .rmp-s2 .rmp-quality-indicator {
+            border-radius: 2px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s2 .rmp-related-skip-preview-up-next {
+            border-radius: 2px 2px 0 0;
+            background-clip: padding-box;
+        }
+
+        .rmp-s2 .rmp-related-skip-preview-title,
+        .rmp-s2 .rmp-seek-bar-thumbnails .rmp-indicator {
+            border-radius: 0 0 2px 2px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s2 .rmp-seek-bar-thumbnails .rmp-thumbnails {
+            border-radius: 2px 2px 0 0;
+            background-clip: padding-box;
+        }
+
+        /* .rmp-time */
+        .rmp-s2 .rmp-time,
+        .rmp-s2.rmp-small .rmp-time,
+        .rmp-s2.rmp-extrasmall .rmp-time,
+        .rmp-s2.rmp-live.rmp-small .rmp-time,
+        .rmp-s2.rmp-live.rmp-extrasmall .rmp-time,
+        .rmp-s2.rmp-live.rmp-doubleextrasmall .rmp-time {
+            bottom: 0;
+        }
+
+        .rmp-s2.rmp-small .rmp-time,
+        .rmp-s2.rmp-extrasmall .rmp-time {
+            left: 104px;
+            right: auto;
+            height: 48px;
+            line-height: 48px;
+            background: none;
+            padding: 0;
+        }
+
+        .rmp-s2.rmp-quick-rewind-or-forward-ui.rmp-small .rmp-time {
+            left: 152px;
+        }
+
+        .rmp-s2.rmp-quick-rewind-and-forward-ui.rmp-small .rmp-time {
+            left: 200px;
+        }
+
+        .rmp-s2.rmp-small .rmp-time-separator,
+        .rmp-s2.rmp-extrasmall .rmp-time-separator,
+        .rmp-s2.rmp-small .rmp-duration-text,
+        .rmp-s2.rmp-extrasmall .rmp-duration-text {
+            display: none !important;
+        }
+
+        .rmp-s2.rmp-small .rmp-time-elapsed-text,
+        .rmp-s2.rmp-extrasmall .rmp-time-elapsed-text {
+            margin-left: -50%;
+        }
+
+        .rmp-s2.rmp-dvr.rmp-dvr-vod .rmp-duration-text {
+            font-size: 14px;
+        }
+
+        .rmp-s2.rmp-quick-rewind-or-forward-ui.rmp-extrasmall .rmp-time,
+        .rmp-s2.rmp-small.rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-time,
+        .rmp-s2.rmp-small.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-time,
+        .rmp-s2.rmp-extrasmall.rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-time,
+        .rmp-s2.rmp-extrasmall.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-time {
+            display: none !important;
+        }
+
+        .rmp-s2.rmp-related-ui.rmp-small .rmp-time {
+            left: 152px;
+            right: auto;
+        }
+
+        .rmp-s2.rmp-related-ui.rmp-extrasmall .rmp-time {
+            display: none !important;
+        }
+
+        .rmp-s2 .rmp-related-skip-preview {
+            top: -166px;
+        }
+
+        /* .rmp-seek-bar */
+        .rmp-s2 .rmp-seek-bar,
+        .rmp-s2.rmp-captions-ui .rmp-seek-bar,
+        .rmp-s2.rmp-audio-ui .rmp-seek-bar,
+        .rmp-s2.rmp-captions-ui.rmp-audio-ui .rmp-seek-bar,
+        .rmp-s2.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-s2.rmp-quick-rewind-and-forward-ui .rmp-seek-bar,
+        .rmp-s2.rmp-captions-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-s2.rmp-audio-ui.rmp-quick-rewind-or-forward-ui .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-small .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-extrasmall .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-captions-ui .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-audio-ui .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-captions-ui.rmp-audio-ui .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-captions-ui.rmp-small .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-audio-ui.rmp-small .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-captions-ui.rmp-audio-ui.rmp-small .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-captions-ui.rmp-extrasmall .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-audio-ui.rmp-extrasmall .rmp-seek-bar,
+        .rmp-s2.rmp-related-ui.rmp-captions-ui.rmp-audio-ui.rmp-extrasmall .rmp-seek-bar {
+            left: 8px;
+            width: calc(100% - 16px);
+            top: -6px;
+            height: 6px;
+        }
+
+        .rmp-s2 .rmp-seek-bar:hover,
+        .rmp-s2.rmp-captions-ui .rmp-seek-bar:hover,
+        .rmp-s2.rmp-audio-ui .rmp-seek-bar:hover,
+        .rmp-s2.rmp-captions-ui.rmp-audio-ui .rmp-seek-bar:hover {
+            top: -8px;
+            height: 10px;
+            cursor: pointer;
+            transition-property: top, height;
+            transition-duration: 0.2s;
+            transition-timing-function: linear;
+        }
+
+        .rmp-s2 .rmp-time-total {
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .rmp-s2 .rmp-volume {
+            z-index: 1;
+        }
+
+        .rmp-s2 .rmp-volume-handle {
+            width: 16px;
+            height: 16px;
+            margin-top: -8px;
+            margin-left: -8px;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s2 .rmp-handle {
+            width: 0;
+            height: 0;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .rmp-s2 .rmp-seek-bar:hover .rmp-handle {
+            width: 16px;
+            height: 16px;
+            margin-top: -8px;
+            margin-left: -8px;
+            border-radius: 16px;
+            background-clip: padding-box;
+        }
+
+        .rmp-s2 .rmp-indicator {
+            top: -32px;
+        }
+
+        /* volume */
+        .rmp-s2 .rmp-volume-container {
+            background: none;
+            bottom: 30px;
+        }
+
+        .rmp-s2 .rmp-volume-bar-container {
+            left: 20px;
+            width: 8px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .rmp-s2 .rmp-volume-indicator {
+            top: -48px;
+        }
+
+        .rmp-s2 .rmp-volume-hint {
+            top: -78px;
+        }
+
+        .rmp-s2 .rmp-control-bar-hint {
+            top: -36px;
+        }
+
+        /* Ads CSS */
+        .rmp-s2 .rmp-ad-info {
+            line-height: 30px;
+            height: 30px;
+            top: 9px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .rmp-s2 .rmp-ad-info-message {
+            padding: 0;
+        }
+
+        .rmp-s2 .rmp-ad-container.rmp-ad-overlay {
+            top: -58px;
+        }
+
+        /* cue points */
+        .rmp-s2 .rmp-cue-point-text {
+            top: -34px;
+        }
+
+        /* outstream skin */
+        .rmp-outstream .rmp-control-bar {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .rmp-outstream .rmp-overlay-button,
+        .rmp-outstream .rmp-mobile-central-ui,
+        .rmp-outstream .rmp-loading-spin,
+        .rmp-outstream .rmp-volume-indicator,
+        .rmp-outstream .rmp-volume-hint,
+        .rmp-outstream .rmp-control-bar-hint,
+        .rmp-outstream .rmp-hint {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 2px;
+            background-clip: padding-box;
+        }
+
+        .rmp-outstream .rmp-seek-bar,
+        .rmp-outstream .rmp-time,
+        .rmp-outstream .rmp-module {
+            display: none !important;
+        }
+
+        .rmp-outstream .rmp-ad-current-time {
+            bottom: 0;
+        }
+
+        /* TV skin specific CSS
+ * Note that TV skin is based on s2 skin
+ */
+        .rmp-tv .rmp-control-bar {
+            height: 96px !important;
+        }
+
+        .rmp-tv .rmp-seek-bar {
+            top: -34px !important;
+            height: 12px !important;
+            left: 96px !important;
+            width: calc(100% - 192px) !important;
+        }
+
+        .rmp-medium.rmp-tv .rmp-seek-bar,
+        .rmp-small.rmp-tv .rmp-seek-bar,
+        .rmp-extrasmall.rmp-tv .rmp-seek-bar,
+        .rmp-doubleextrasmall.rmp-tv .rmp-seek-bar {
+            left: 48px !important;
+            width: calc(100% - 96px) !important;
+        }
+
+        .rmp-tv .rmp-time {
+            left: 96px !important;
+            height: 48px !important;
+            line-height: 48px !important;
+            font-size: 32px;
+            top: 14px !important;
+            width: auto !important;
+        }
+
+        .rmp-medium.rmp-tv .rmp-time {
+            left: 48px !important;
+            font-size: 16px;
+        }
+
+        .rmp-small.rmp-tv .rmp-time,
+        .rmp-extrasmall.rmp-tv .rmp-time,
+        .rmp-doubleextrasmall.rmp-tv .rmp-time {
+            display: none;
+        }
+
+        .rmp-tv .rmp-play-pause {
+            left: 50% !important;
+            margin-left: -24px !important;
+            width: 70px;
+            height: 70px;
+        }
+
+        .rmp-tv .rmp-control-bar .rmp-i {
+            font-size: 3.72em;
+        }
+
+        .rmp-tv.rmp-dvr.rmp-dvr-vod .rmp-duration-text {
+            font-size: 32px;
+        }
+
+        .rmp-tv.rmp-dvr.rmp-dvr-live .rmp-i-dvr {
+            font-size: 1.25em;
+        }
+
+        .rmp-tv .rmp-control-bar .rmp-fast-forward,
+        .rmp-tv .rmp-control-bar .rmp-fast-rewind {
+            font-size: 4.84em;
+        }
+
+        .rmp-tv .rmp-control-bar .rmp-indicator {
+            font-size: 24px;
+            height: 40px;
+            line-height: 40px;
+            width: 160px;
+            margin-left: -80px;
+            top: -50px;
+        }
+
+        .rmp-tv .rmp-control-bar .rmp-fast-indicator {
+            font-size: 1.86em;
+            height: 40px;
+            line-height: 40px;
+            left: 8px;
+            width: 40px;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .rmp-tv .rmp-control-bar .rmp-time-indicator {
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 56px;
+            width: 96px;
+            text-align: center;
+        }
+
+        .rmp-medium.rmp-tv .rmp-control-bar .rmp-i,
+        .rmp-small.rmp-tv .rmp-control-bar .rmp-i,
+        .rmp-extrasmall.rmp-tv .rmp-control-bar .rmp-i,
+        .rmp-doubleextrasmall.rmp-tv .rmp-control-bar .rmp-i {
+            font-size: 1.86em;
+        }
+
+        .rmp-tv .rmp-seek-bar:hover .rmp-handle,
+        .rmp-tv .rmp-overlay-button,
+        .rmp-extrasmall.rmp-tv .rmp-fast-rewind,
+        .rmp-extrasmall.rmp-tv .rmp-fast-forward,
+        .rmp-doubleextrasmall.rmp-tv .rmp-fast-rewind,
+        .rmp-doubleextrasmall.rmp-tv .rmp-fast-forward {
+            display: none !important;
+        }
+
+        .rmp-tv .rmp-loading-spin {
+            height: 120px !important;
+            width: 120px !important;
+            margin-top: -60px !important;
+            margin-left: -60px !important;
+        }
+
+        .rmp-tv .rmp-loading-spin-circle {
+            width: 120px !important;
+            height: 120px !important;
+            border-width: 6px !important;
+        }
+
+        .rmp-tv .rmp-ad-info {
+            left: 3%;
+            height: 48px;
+            line-height: 48px;
+            padding-right: 8px;
+            top: 14px;
+            font-size: 32px;
+        }
+
+        .rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-or-forward {
+            left: 50%;
+            margin-left: calc(-24px - 96px);
+            width: 70px;
+            height: 70px;
+        }
+
+        .rmp-medium.rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-or-forward,
+        .rmp-small.rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-or-forward,
+        .rmp-extrasmall.rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-or-forward {
+            left: 50%;
+            margin-left: calc(-24px - 48px);
+        }
+
+        .rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-and-forward {
+            left: 50%;
+            margin-left: calc(-24px + 96px);
+            width: 70px;
+            height: 70px;
+        }
+
+        .rmp-medium.rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-and-forward,
+        .rmp-small.rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-and-forward,
+        .rmp-extrasmall.rmp-tv.rmp-quick-rewind-and-forward-ui .rmp-quick-rewind-and-forward {
+            left: 50%;
+            margin-left: calc(-24px + 48px);
+        }
+
+        .rmp-tv .rmp-fast-rewind {
+            position: absolute;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-left: calc(-24px - 192px);
+        }
+
+        .rmp-medium.rmp-tv .rmp-fast-rewind,
+        .rmp-small.rmp-tv .rmp-fast-rewind,
+        .rmp-extrasmall.rmp-tv .rmp-fast-rewind {
+            left: 50%;
+            margin-left: calc(-24px - 96px);
+        }
+
+        .rmp-tv .rmp-fast-forward {
+            position: absolute;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-left: calc(-24px + 192px);
+        }
+
+        .rmp-medium.rmp-tv .rmp-fast-forward,
+        .rmp-small.rmp-tv .rmp-fast-forward,
+        .rmp-extrasmall.rmp-tv .rmp-fast-forward {
+            left: 50%;
+            margin-left: calc(-24px + 96px);
+        }
+
+        .rmp-tv .rmp-cc-area {
+            bottom: 120px !important;
+        }
+
+        .rmp-tv .rmp-overlay-level {
+            height: 60px;
+            line-height: 56px;
+            width: 344px;
+            font-size: 28px;
+            margin-left: -172px;
+            margin-bottom: 16px;
+        }
+
+        .rmp-tv .rmp-overlay-title {
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+        .rmp-tv .rmp-overlay-title-text {
+            font-size: 28px;
+        }
+
+        .rmp-tv .rmp-module-overlay .rmp-i {
+            font-size: 3.72em;
+        }
+
+        .rmp-tv .rmp-module-overlay-close {
+            right: 104px !important;
+        }
+
+        .rmp-tv .rmp-module-overlay-icons.rmp-module-overlay-play-pause,
+        .rmp-tv .rmp-module-fcc-settings {
+            display: none !important;
+        }
+
+    </style>
+</head>
+
+<body class="font-sans antialiased leading-none text-gray-800">
+    <main>
+        <section class="breadcrumb-area breadcrumb-bg"
+            style="background-image: url(&quot;img/images/liveban.png&quot;);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <h2 class="title">Live <span style="color: rgb(206, 1, 27);">Tv</span></h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Tv</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-rated-movie tr-movie-bg3" style="background-color: rgb(29, 31, 43);">
+            <div class="container">
+                <div class="highlight-card highInnerPage">
+                    <div class="custom-col- mb-20">
+                        <div>
+                            <div class="movie-poster highlights-list-img"><a
+                                    href="/tsports1"><img
+                                        src="https://image.tsports.com/images/contents/thumbnail/691/web_thumbnail_LIVE(1)_64e4dd8e1a29e.jpg"
+                                        alt="T Sports Live 1"></a></div>
+                            <div class="highlight-list-content">
+                                <div class="highlightslist_content_name">
+                                    <p>T Sports Live 1</p>
+                                </div>
+                                <div class="highlightslist_content_tag"> T Sports | T Sports Live | Sports</div>
+                                <div class="highlight-list-content-time"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col- mb-20">
+                        <div>
+                            <div class="movie-poster highlights-list-img"><a
+                                    href="/tsports2"><img
+                                        src="https://image.tsports.com/images/contents/thumbnail/261/ts-live-02.jpeg"
+                                        alt="T Sports Live 2"></a></div>
+                            <div class="highlight-list-content">
+                                <div class="highlightslist_content_name">
+                                    <p>T Sports Live 2</p>
+                                </div>
+                                <div class="highlightslist_content_tag"> T Sports | T Sports Live | Sports</div>
+                                <div class="highlight-list-content-time"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
